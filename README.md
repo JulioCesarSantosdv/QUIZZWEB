@@ -88,46 +88,45 @@ Siga as etapas abaixo para configurar e executar o projeto em sua máquina local
 
 ### Passos para Instalar
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seuusuario/QUIZZWEB.git
-   cd QUIZZWEB
+| Passo | Comando                                                       | Descrição                                           |
+|------ |---------------------------------------------------------------|---------------------------------------------------|
+| 1     | `git clone https://github.com/seuusuario/QUIZZWEB.git`         | Clonar o repositório do projeto                   |
+|       | `cd QUIZZWEB`                                                  | Acessar a pasta do projeto                        |
+| 2     | `npm install`                                                  | Instalar as dependências do projeto               |
+| 3     | `npm install -g live-server`                                   | Instalar globalmente o `live-server` para rodar o frontend |
 
 
-2. Instale as dependências do projeto:
-  ```bash
-npm install
-Instale globalmente o live-server para rodar o frontend:
+## Executando o Projeto
 
-3. Instale globalmente o live-server para rodar o frontend:
-  ```bash
-npm install -g live-server
-
-##Executando o Projeto
-
-###Frontend
+### Frontend
 Para iniciar o servidor local e testar o frontend (arquivos HTML, CSS e JS):
 
 live-server
 Isso abrirá o projeto no navegador, por padrão, em http://127.0.0.1:8080.
 
-###Backend
-Para rodar o backend com Node.js (Express), execute o seguinte comando na pasta /server:
- 
-```bash
-node server.js
-Acesse o backend em http://localhost:3000.
+### Backend
 
-###Scripts
-- live-server: Inicia o servidor local para desenvolvimento com recarregamento automático.
-- node server.js: Inicia o servidor backend.
+| Passo                                | Comando            | Descrição                                                |
+|--------------------------------------|--------------------|----------------------------------------------------------|
+| 1. Navegar para a pasta do backend    | `cd server`        | Acesse a pasta `/server` onde o backend está localizado   |
+| 2. Rodar o servidor Node.js (Express) | `node server.js`   | Inicie o backend usando o Node.js com o arquivo `server.js`|
+| 3. Acessar o backend                 | N/A                | Acesse o backend em [http://localhost:3000](http://localhost:3000) |
 
-Problemas Conhecidos
+
+### Scripts
+
+| Script            | Descrição                                                              |
+|-------------------|------------------------------------------------------------------------|
+| `live-server`      | Inicia o servidor local para desenvolvimento com recarregamento automático. |
+| `node server.js`   | Inicia o servidor backend.                                             |
+
+
+### Problemas Conhecidos
 Algumas dependências do projeto podem emitir avisos de versão desatualizada, como o chokidar e uuid, que podem 
 ser resolvidos futuramente com uma atualização para versões mais recentes.
 Caso o live-server não funcione corretamente, tente reinstalá-lo ou utilize outra ferramenta de servidor local.
 
-##Como Contribuir
+### Como Contribuir
 Faça um fork deste repositório.
 Crie uma nova branch com sua funcionalidade (git checkout -b feature/nova-funcionalidade).
 Commit suas alterações (git commit -m 'Adiciona nova funcionalidade').
