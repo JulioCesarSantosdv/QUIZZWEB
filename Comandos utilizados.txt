@@ -1,0 +1,115 @@
+
+
+$ node -v   # Verifica a versão do Node.js
+v14.21.3
+
+
+$ npm -v    # Verifica a versão do npm
+6.14.18
+
+
+$ ls 		# Lista os diretórios disponíveis
+ assets/   bootstrap/   css/   index.html   js/  'Quizz Simulator.txt'   README.md
+
+$ npm init -y #Inicializando um novo projeto Node.js na pasta especificada
+Wrote to D:\Nova pasta\UNESA\SISTEMA DE INFORMAÇÃO\QUIZZWEB\package.json:
+
+{
+  "name": "QUIZZWEB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+$ npm install bootstrap  #Instala o Bootstrap na aplicação Node.js 
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN bootstrap@5.3.3 requires a peer of @popperjs/core@^2.11.8 but none is installed. You must install peer dependencies yourself.
+npm WARN QUIZZWEB@1.0.0 No description
+npm WARN QUIZZWEB@1.0.0 No repository field.
+
++ bootstrap@5.3.3
+added 1 package from 1 contributor and audited 1 package in 15.622s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+$ npm install @popperjs/core  #Instalada a biblioteca @popperjs/core, que é uma dependência necessária para o Bootstrap
+npm WARN QUIZZWEB@1.0.0 No description
+npm WARN QUIZZWEB@1.0.0 No repository field.
+
++ @popperjs/core@2.11.8
+added 1 package from 1 contributor and audited 2 packages in 8.38s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+$ npm install -g live-server # Instala o live-server globalmente
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm WARN deprecated opn@6.0.0: The package has been renamed to `open`
+npm WARN deprecated fsevents@1.2.13: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+C:\Program Files\nodejs\live-server -> C:\Program Files\nodejs\node_modules\live-server\live-server.js
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\live-server\node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ live-server@1.2.2
+added 186 packages from 152 contributors in 78.678s
+
+$ live-server  # Live-server inicializado em um servidor local em http://127.0.0.1:8080
+
+npm install express  # Instala o Express
+
+node server.js #Inicia o servidor js
+
+
+Passos para Executar o Servidor Node.js
+Abra o terminal (ou terminal do Git Bash, já que você está usando o Windows) e navegue até o diretório onde o server.js está localizado. Isso pode ser feito com o seguinte comando:
+
+bash
+Copiar código
+cd /d/Nova\ pasta/UNESA/SISTEMA\ DE\ INFORMAÇÃO/QUIZZWEB/server
+Observação: O \ é usado para escapar os espaços no nome do diretório. Assim, "Nova pasta" se torna Nova\ pasta.
+
+Execute o servidor:
+
+Agora, você deve executar o seguinte comando para iniciar o servidor:
+
+node server.js
+Verifique se o servidor está rodando:
+
+Após executar o comando, você deve ver uma mensagem indicando que o servidor está escutando na porta 3000. 
+Se não houver erros, o servidor deve estar ativo.
+
+Testar o servidor:
+
+Depois de iniciar o servidor, você pode testar acessando http://localhost:3000 no seu navegador ou usando o comando curl que você tentou anteriormente:
+
+bash
+Copiar código
+curl http://localhost:3000
+Caso de Erro
+Se você ainda receber um erro de "Cannot find module" ou algo semelhante, aqui estão algumas dicas:
+
+Verifique o arquivo server.js: Certifique-se de que o código está correto e não há erros de sintaxe.
+Verifique o caminho do arquivo: A estrutura do diretório parece correta, mas é sempre bom revisar para garantir que o arquivo está no lugar certo.
+Verifique se o Node.js está instalado: Execute node -v no terminal para verificar se o Node.js está instalado e funcionando corretamente.
+
+cd ..
+Volta um diretório

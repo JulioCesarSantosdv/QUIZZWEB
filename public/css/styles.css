@@ -1,0 +1,105 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border na largura e altura dos elementos */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: whitesmoke; /* Define a cor de fundo da página */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; /* Melhora a legibilidade */
+    padding: 10px; /* Adiciona um pouco de espaço nas bordas */
+}
+.mb-3 {
+    background-color: whitesmoke;
+    padding: 15px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Deixa os cantos arredondados */
+}
+
+.quiz-container {
+    max-width: 800px; /* Largura máxima do contêiner do quiz */
+    margin: 50px auto; /* Centraliza o contêiner na página */
+    padding: 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 8px; /* Opcional: cantos arredondados */
+    background-color: whitesmoke; /* Fundo branco para o quiz */
+}
+
+/* Alinhamento das questões e opções */
+.quiz-container .question {
+    margin-bottom: 20px; /* Espaçamento entre as questões */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tamanho da fonte e alinhamento dos labels (questões) */
+.quiz-container label {
+    font-size: 18px; /* Define o tamanho da fonte das questões */
+    margin-bottom: 10px; /* Espaçamento inferior dos labels */
+}
+
+/* Estilo para as opções de resposta */
+.quiz-container .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre as opções */
+}
+
+.quiz-container input[type="radio"] {
+    margin-right: 10px; /* Espaçamento entre o input e o texto */
+}
+
+.quiz-container input {
+    font-size: 20px; /* Define o tamanho da fonte dos inputs */
+}
+
+.timer {
+    font-size: 2em; /* Tamanho da fonte do timer */
+    margin-bottom: 20px; /* Margem inferior do timer */
+    text-align: center; /* Centraliza o timer */
+}
+
+.result {
+    margin-top: 20px; /* Margem superior do resultado */
+    text-align: center; /* Centraliza o resultado */
+}
+
+.answers {
+    margin-top: 20px; /* Margem superior para a seção de respostas corretas */
+    font-weight: bold; /* Destaca o texto das respostas corretas */
+    text-align: left; /* Alinha à esquerda as respostas */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .quiz-container {
+        margin: 20px; /* Reduz a margem em dispositivos menores */
+        padding: 15px; /* Reduz o padding */
+    }
+
+    .timer {
+        font-size: 1.5em; /* Tamanho da fonte do timer em dispositivos menores */
+    }
+    
+    body {
+        padding: 5px; /* Reduz o padding em dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .timer {
+        font-size: 1.2em; /* Tamanho da fonte ainda menor */
+    }
+    
+    .quiz-container {
+        padding: 10px; /* Ajuste do padding */
+    }
+}

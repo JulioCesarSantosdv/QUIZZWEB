@@ -1,0 +1,40 @@
+/QUIZZWEB/
+│
+│
+│
+├── /assets/                # Pasta para armazenar recursos estáticos
+│   ├── /images/            # Imagens usadas no projeto (ícones, logos, etc.)
+│   │   └── quiz-logo.png   # Exemplo de arquivo de imagem
+│   ├── /fonts/             # Fontes personalizadas do projeto
+│   │   └── Roboto-Regular.ttf # Exemplo de arquivo de fonte
+│   └── /icons/             # Ícones usados no projeto
+│       └── timer-icon.svg  
+│
+│
+│ 
+├── /public/        	# FrontEnd do Projeto
+│   │    
+│   ├── index.html    	 # Página principal do quiz        
+│   ├── /css/            # Diretório de Estilos
+│   │   └── styles.css   #Estilos personalizados do quiz
+│   │
+│   ├── /js/
+│   │   │    
+│   │   └── /functions/       # Diretório de Funções Javascript
+│   └── script.js             # Lógica do quiz com temporizador
+│       
+│
+│
+├── /node_modules/
+│   ├── /(..)/
+│   ├── /@popperjs/
+│   │   └── (..)  
+│   └── /bootstrap/
+│       └── (..)
+├── /server/
+│   └── server.js
+│
+├── package.json 
+├── package-lock.json             
+└── README.md               
+
