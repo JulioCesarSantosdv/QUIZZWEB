@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Inclui padding e border na largura e altura dos elementos */
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -13,41 +13,40 @@
 }
 
 body {
-    background-color: whitesmoke; /* Define a cor de fundo da página */
+    background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6; /* Melhora a legibilidade */
-    padding: 10px; /* Adiciona um pouco de espaço nas bordas */
+    line-height: 1.6;
+    padding: 10px;
 }
+
 .mb-3 {
     background-color: whitesmoke;
-    padding: 15px; /* Adiciona espaçamento interno */
-    border-radius: 5px; /* Deixa os cantos arredondados */
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .quiz-container {
-    max-width: 800px; /* Largura máxima do contêiner do quiz */
-    margin: 50px auto; /* Centraliza o contêiner na página */
-    padding: 20px; /* Espaçamento interno */
-    border: none; /* Remove a borda */
-    border-radius: 8px; /* Opcional: cantos arredondados */
-    background-color: whitesmoke; /* Fundo branco para o quiz */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: whitesmoke;
 }
 
-/* Alinhamento das questões e opções */
+/* Estilo para as questões */
 .quiz-container .question {
     margin-bottom: 20px; /* Espaçamento entre as questões */
-    display: flex;
-    flex-direction: column;
 }
 
-/* Tamanho da fonte e alinhamento dos labels (questões) */
+/* Alinhamento das labels */
 .quiz-container label {
-    font-size: 18px; /* Define o tamanho da fonte das questões */
-    margin-bottom: 10px; /* Espaçamento inferior dos labels */
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 /* Estilo para as opções de resposta */
-.quiz-container .options {
+.options {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espaçamento entre as opções */
@@ -58,48 +57,48 @@ body {
 }
 
 .quiz-container input {
-    font-size: 20px; /* Define o tamanho da fonte dos inputs */
+    font-size: 20px;
 }
 
 .timer {
-    font-size: 2em; /* Tamanho da fonte do timer */
-    margin-bottom: 20px; /* Margem inferior do timer */
-    text-align: center; /* Centraliza o timer */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .result {
-    margin-top: 20px; /* Margem superior do resultado */
-    text-align: center; /* Centraliza o resultado */
+    margin-top: 20px;
+    text-align: center;
 }
 
 .answers {
-    margin-top: 20px; /* Margem superior para a seção de respostas corretas */
-    font-weight: bold; /* Destaca o texto das respostas corretas */
-    text-align: left; /* Alinha à esquerda as respostas */
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .quiz-container {
-        margin: 20px; /* Reduz a margem em dispositivos menores */
-        padding: 15px; /* Reduz o padding */
+        margin: 20px;
+        padding: 15px;
     }
 
     .timer {
-        font-size: 1.5em; /* Tamanho da fonte do timer em dispositivos menores */
+        font-size: 1.5em;
     }
     
     body {
-        padding: 5px; /* Reduz o padding em dispositivos menores */
+        padding: 5px;
     }
 }
 
 @media (max-width: 480px) {
     .timer {
-        font-size: 1.2em; /* Tamanho da fonte ainda menor */
+        font-size: 1.2em;
     }
     
     .quiz-container {
-        padding: 10px; /* Ajuste do padding */
+        padding: 10px;
     }
 }

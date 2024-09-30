@@ -39,7 +39,18 @@ function gradeQuiz() {
         q9: "1",  // Resposta correta da questão 9
         q10: "1",  // Resposta correta da questão 10
         q11: "1",  // Resposta correta da questão 11
-        q12: "1"  // Resposta correta da questão 12
+        q12: "1",  // Resposta correta da questão 12
+        q13: "1",  // Resposta correta da questão 13
+        q14: "1",  // Resposta correta da questão 14
+        q15: "1",  // Resposta correta da questão 15
+        q16: "1",  // Resposta correta da questão 16
+        q17: "1",  // Resposta correta da questão 17
+        q18: "1",  // Resposta correta da questão 18
+        q19: "1",  // Resposta correta da questão 19
+        q20: "1",  // Resposta correta da questão 20
+        q21: "1",  // Resposta correta da questão 21
+        q22: "1",  // Resposta correta da questão 22
+        q23: "1"  // Resposta correta da questão 23
     };
 
     let score = 0; // Variável para armazenar a pontuação do usuário
@@ -73,6 +84,17 @@ function gradeQuiz() {
         <p>10. Afirmativa correta: "text.trens[1].trem + " " + text.trens[1].linha. ".</p>
         <p>11. Afirmativa correta: "list-domains".</p>
         <p>12. Afirmativa correta: "EntityManager ".</p>
+        <p>13. Afirmativa correta: "$(´p:first´); retornará o primeiro dos elementos p.  ".</p>
+        <p>14. Afirmativa correta: "ResultSet rs = st.executeQuery("select *  from ALUNOS")".</p>
+        <p>15. Afirmativa correta: "Diretiva".</p>
+        <p>16. Afirmativa correta: "É um framework client-side desenvolvido na linguagem Java para a manipulação de elementos HTML".</p>
+        <p>17. Afirmativa correta: "$(class=".escondido").hide() ".</p>
+        <p>18. Afirmativa correta: "Apenas III".</p>
+        <p>19. Afirmativa correta: "web.xml".</p>
+        <p>20. Afirmativa correta: "Broker".</p>
+        <p>21. Afirmativa correta: "Tratam as mensagens através de seu único método, denominado on Message".</p>
+        <p>22. Afirmativa correta: "WSDL".</p>
+        <p>23. Afirmativa correta: "O valor da variável teste será sempre 200".</p>
     `;
     answersDiv.style.display = 'block'; // Exibe a seção com as respostas corretas
 }
