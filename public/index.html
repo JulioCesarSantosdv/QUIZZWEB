@@ -5,83 +5,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</title>
         <!-- Importando Fonte da Google -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Link para o CSS do Bootstrap -->
-        <link rel="stylesheet" href="/node_modules/bootstrap/css/bootstrap.min.css">
-                <!-- Link para o CSS Personalizado-->
-                <link rel="stylesheet" href="/public/css/styles.css">
-        <!-- Compatibilidade com IE -->
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Conteúdo de Política de Segurança-->
-         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+         <!-- Link para o CSS do Bootstrap -->
+          <link rel="stylesheet" href="/node_modules/bootstrap/css/bootstrap.min.css">
+          <!-- Link para o CSS Personalizado-->
+           !<!--<link rel="stylesheet" href="/public/css/styles.css">-->
+           <!--Compatibilidade com IE-->
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <!-- Conteúdo de Política de Segurança-->
+             <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
     </head>
-<body>
-    <div class="container quiz-container">
-        <h1 class="text-center">SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</h1> <!-- Título do simulado -->
-        <div class="timer text-center">Tempo restante: <span id="time">40</span>minutos</div> <!-- Timer exibindo o tempo restante -->
-        <form id="quiz-form"> <!-- Início do formulário do quiz -->
+    <body>
+        <div class="container quiz-container">
+            <h1 class="text-center">SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</h1>
+            <!-- Temporizador do quiz -->
+             <div class="timer text-center">Tempo restante: <span id="time">40</span> minutos</div>
+             <!-- Início do formulário de perguntas -->
+              <form id="quiz-form">
 
-            <!-- Questão 1 -->
-            <div class="mb-3">
-                <label class="form-label">1. Considerando o fragmento de código abaixo, em relação ao escopo de variáveis em Javascript, assinale a afirmativa correta:</label>
-                <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4; font-size: 18px;">
+<!-- Questão 1 -->
+<div class="mb-3">
+    <label class="form-label">1. Considerando o fragmento de código abaixo, em relação ao escopo de variáveis em Javascript, assinale a afirmativa correta:</label>
+    <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4; font-size: 18px;">
 for (let i=0; i&lt;5; i++) {  
-    var a = 0; 
-    a++; 
+var a = 0; 
+a++; 
 } 
 console.log(a); 
 i = i - 1; 
 console.log(i);  
-                </pre>
-                <div>
-                    <input type="radio" name="q1" value="0"> Serão impressos 6 e 4<br>
-                    <input type="radio" name="q1" value="1"> Serão impressos 1 e undefined<br>
-                    <input type="radio" name="q1" value="0"> Serão impressos 1 e -1<br>
-                    <input type="radio" name="q1" value="0"> Serão impressos 5 e 5<br>
-                    <input type="radio" name="q1" value="0"> Serão impressos undefined e undefined
-                </div>
-            </div>
-
-            <!-- Questão 2 -->
+    </pre>
+    <div>
+        <input type="radio" name="q1" value="0"> Serão impressos 6 e 4<br>
+        <input type="radio" name="q1" value="1"> Serão impressos 1 e undefined<br>
+        <input type="radio" name="q1" value="0"> Serão impressos 1 e -1<br>
+        <input type="radio" name="q1" value="0"> Serão impressos 5 e 5<br>
+        <input type="radio" name="q1" value="0"> Serão impressos undefined e undefined
+    </div>
+</div>
+    <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q1-->
+    <div id="answer-q1" class="answer" style="display: none;"></div>
+<br>
+<!-- Questão 2 -->
 <div class="mb-3">
-    <label class="form-label">2.<strong>FCC - 2014 - TRT - 13ª Região (PB) - Técnico Judiciário - Tecnologia da Informação</strong><br> 
-        Considere a página abaixo, construída utilizando jQuery:
-        <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 15px;">
-&lt;!DOCTYPE html&gt;
-
+    <label class="form-label">2. FCC - 2014 - TRT - 13ª Região (PB) - Técnico Judiciário - Tecnologia da Informação<br>Considere a página abaixo, construída utilizando jQuery:</label>
+    <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 15px;">
 &lt;html&gt;
-
 &lt;head&gt;
-
-&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
-
+&lt;meta charset="UTF-8"&gt;
 &lt;title&gt;Home&lt;/title&gt;
-
-&lt;script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"&gt;&lt;/script&gt;
-
-&lt;script type="text/javascript"&gt;
-
-$(document).ready(function() {
-
-..I....
-
-});
-
+&lt;script src="http://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+$(document).ready(function() { ..I.. });
 &lt;/script&gt;
-
 &lt;/head&gt;
-
 &lt;body&gt;
-
 &lt;button type="button"&gt;Esconder&lt;/button&gt;
-
 &lt;p class="par"&gt;Texto do parágrafo.&lt;/p&gt;
-
 &lt;/body&gt;
-
 &lt;/html&gt;
-        </pre>
-        Para que, ao se clicar no botão <i>Esconder</i>, o  texto do parágrafo se torne oculto,deve-se preencher a lacuna I com:</label>
+    </pre>
     <div>
         <input type="radio" name="q2" value="0"> $('button:eq(1)').click(function(){$('p#par').hide();});<br>
         <input type="radio" name="q2" value="0"> $('button:eq(0)').click(function().defineProperty('p.par').hide());<br>
@@ -89,101 +72,111 @@ $(document).ready(function() {
         <input type="radio" name="q2" value="1"> $('button').click(function(){$('p.par').hide();});<br>
         <input type="radio" name="q2" value="0"> $('button').click(function(){$('p#par').hide();});
     </div>
+     <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q2-->
+    <div id="answer-q2" class="answer" style="display: none;"></div>
 </div>
+<!-- Questão 3 -->
+<div class="mb-3">
+    <label class="form-label">3. O padrão Front Controller é muito utilizado no ambiente Java Web, definindo a centralização das chamadas HTTP e o direcionamento do fluxo de execução do sistema para a visualização correta. Qual das opções descreve corretamente os passos para implementar o processamento das requisições de acordo com o padrão descrito?</label>
+    <div>
+        <input type="radio" name="q3" value="0"> A requisição é recebida no Servlet e redirecionada para a página JSP correta, com o uso de sendRedirect, sendo feitas as conversões e chamadas para métodos de negócio ao nível da página JSP.<br>
+        <input type="radio" name="q3" value="0"> A requisição é recebida na página JSP, onde são feitas as chamadas necessárias para os métodos de negócio, e no final temos um comando sendRedirect para efetuar o redirecionamento para o Servlet.<br>
+        <input type="radio" name="q3" value="0"> A requisição é recebida na página JSP, seguida de um redirecionamento para o Servlet através de um comando sendRedirect, onde é construída a resposta, e todas as chamadas a métodos de negócios ocorrem no navegador do usuário.<br>
+        <input type="radio" name="q3" value="1"> A requisição é recebida no Servlet, onde são feitas conversões e chamadas para métodos de negócio, e no final um RequestDispatcher redireciona o fluxo para a página JSP.<br>
+    </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q3-->
+<div id="answer-q3" class="answer" style="display: none;"></div>
 
-            <!-- Questão 3 -->
-            <div class="mb-3">
-                <label class="form-label">3. O padrão Front Controller é muito utilizado no ambiente Java Web, definindo a centralização das chamadas HTTP e o direcionamento do fluxo de execução do sistema para a visualização correta. Qual das opções descreve corretamente os passos para implementar o processamento das requisições de acordo com o padrão descrito?</label>
-                <div>
-                    <input type="radio" name="q3" value="0"> A requisição é recebida no Servlet e redirecionada para a página JSP correta, com o uso de sendRedirect, sendo feitas as conversões e chamadas para métodos de negócio ao nível da página JSP.<br>
-                    <input type="radio" name="q3" value="0"> A requisição é recebida na página JSP, onde são feitas as chamadas necessárias para os métodos de negócio, e no final temos um comando sendRedirect para efetuar o redirecionamento para o Servlet.<br>
-                    <input type="radio" name="q3" value="0"> A requisição é recebida na página JSP, seguida de um redirecionamento para o Servlet através de um comando sendRedirect, onde é construída a resposta, e todas as chamadas a métodos de negócios ocorrem no navegador do usuário.<br>
-                    <input type="radio" name="q3" value="1"> A requisição é recebida no Servlet, onde são feitas conversões e chamadas para métodos de negócio, e no final um RequestDispatcher redireciona o fluxo para a página JSP.<br>
-                </div>
-            </div>
-            <!-- Questão 4 -->
-            <div class="mb-3">
-                <label class="form-label">4. Quando lidamos com SQL, temos comandos denominados DML, ou linguagem
-                     de manipulação de dados, como INSERT, UPDATE e DELETE, voltamos para manutenção dos dados 
-                     presentes na tabela, e efetuamos consultas através do comando SELECT, talvez o mais relevante
-                      do SQL. Para executar comando DML a partir de um Statement, qual método deveria ser utilizado
-                       para manipulação de dados?</label>
-                <div>
-                    <input type="radio" name="q4" value="0"> createStatement<br>
-                    <input type="radio" name="q4" value="0"> getConnection<br>
-                    <input type="radio" name="q4" value="0"> executeQuery<br>
-                    <input type="radio" name="q4" value="1"> executeUpdate<br>
-                </div>
-            </div>
+<!-- Questão 4 -->
+<div class="mb-3">
+<label class="form-label">4. Quando lidamos com SQL, temos comandos denominados DML, ou linguagem
+de manipulação de dados, como INSERT, UPDATE e DELETE, voltamos para manutenção dos dados 
+presentes na tabela, e efetuamos consultas através do comando SELECT, talvez o mais relevante
+do SQL. Para executar comando DML a partir de um Statement, qual método deveria ser utilizado
+para manipulação de dados?</label>
+<div>
+<input type="radio" name="q4" value="0"> createStatement<br>
+<input type="radio" name="q4" value="0"> getConnection<br>
+<input type="radio" name="q4" value="0"> executeQuery<br>
+<input type="radio" name="q4" value="1"> executeUpdate<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q4-->
+<div id="answer-q4" class="answer" style="display: none;"></div>
 
-            <!-- Questão 5 -->
-            <div class="mb-3">
-                <label class="form-label">5. Ao trabalhar com um aplicativo corporativo, segundo a arquitetura MVC,
-                     as camadas Model e Controller  são definidas ao nível do projeto interno com o terminador "ejb", 
-                     e o NetBeans oferece ferramentas de automatização para a geração dos componentes necessários, 
-                     com utilização de duas tecnologias específicas. Quais são as tecnologias utilizadas para as duas
-                      camadas citadas, respectivamente?</label>
-                <div>
-                    <input type="radio" name="q5" value="0"> JSP e Servlet<br>
-                    <input type="radio" name="q5" value="0"> JPA e JSP<br>
-                    <input type="radio" name="q5" value="0"> Servlet e JPA<br>
-                    <input type="radio" name="q5" value="1"> JPA e EJB<br>
-                    <input type="radio" name="q5" value="0"> EJB e Servlet<br>
-                </div>
-            </div>
-
-            <!-- Questão 6 -->
-            <div class="mb-3">
-                <label class="form-label">6. A arquitetura MVC (Model, View e Controller) é utilizada de forma ampla,
-                     na criação de sistemas cadastrais, e caracteriza-se pela divisão do sistema em três camadas, com 
-                     objetivos específicos. Considerando a divisão utilizada pelo MVC, a interface de usuário e o 
-                     componente DAO estariam, respectivamente, nas camadas:</label>
-                <div>
-                    <input type="radio" name="q6" value="0"> Controller e Model<br>
-                    <input type="radio" name="q6" value="1"> View e Model<br>
-                    <input type="radio" name="q6" value="0"> Model e Controller<br>
-                    <input type="radio" name="q6" value="0"> Model e View<br>
-                </div>
-            </div>
-
-            <!-- Questão 7 -->
-            <div class="mb-3">
-                <label class="form-label">7. Sobre as afirmativas abaixo relacionadas aos conceitos de serviços Web:</label>
-                <ul>
-                    <li>REST - Representational State Transfer;</li>
-                    <li>SOAP - Simple Object Access Protocol.</li>
-                </ul>
-                <label>É correto afirmar que o:</label>                
-                <div>
-                    <input type="radio" name="q7" value="0"> REST é uma arquitetura de rede, baseada no protocolo XML, que permite o serviço Web e o cliente se comunicar.<br>
-                    <input type="radio" name="q7" value="0"> SOAP é um protocolo independente de plataforma que faz chamadas de procedimentos remotos por meio de conexões FTP com poucas limitações.<br>
-                    <input type="radio" name="q7" value="0"> SOAP é uma arquitetura de rede, baseada em mecanismos de solicitação e resposta tradicionais da Web, como solicitações GET e POST.<br>
-                    <input type="radio" name="q7" value="1"> SOAP envia solicitação e resposta de seus serviços empacotados em envelopes, diferentemente do que ocorre nos serviços baseados em REST.<br>
-                    <input type="radio" name="q7" value="0"> REST e o SOAP são um tipo de computação distribuída que permite a um aplicativo clientes ter acesso direto à memória principal de uma aplicação servidora.<br>
-                </div>
-
-            </div>
-
-            <!-- Questão 8 -->
-            <div class="mb-3">
-                <label class="form-label">8. <strong>Prova: MPRS - MPE RS - Técnico em Informática - Área Sistemas - 2015 </strong><br>
-                    Dado o seguinte código JSON com Javascript: 
-                    <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 18px;">
+<!-- Questão 5 -->
+<div class="mb-3">
+<label class="form-label">5. Ao trabalhar com um aplicativo corporativo, segundo a arquitetura MVC,
+ as camadas Model e Controller  são definidas ao nível do projeto interno com o terminador "ejb", 
+ e o NetBeans oferece ferramentas de automatização para a geração dos componentes necessários, 
+ com utilização de duas tecnologias específicas. Quais são as tecnologias utilizadas para as duas
+  camadas citadas, respectivamente?</label>
+<div>
+<input type="radio" name="q5" value="0"> JSP e Servlet<br>
+<input type="radio" name="q5" value="0"> JPA e JSP<br>
+<input type="radio" name="q5" value="0"> Servlet e JPA<br>
+<input type="radio" name="q5" value="1"> JPA e EJB<br>
+<input type="radio" name="q5" value="0"> EJB e Servlet<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q5-->
+<div id="answer-q5" class="answer" style="display: none;"></div>
+<!-- Questão 6 -->
+<div class="mb-3">
+<label class="form-label">6. A arquitetura MVC (Model, View e Controller) é utilizada de forma ampla,
+             na criação de sistemas cadastrais, e caracteriza-se pela divisão do sistema em três camadas, com 
+             objetivos específicos. Considerando a divisão utilizada pelo MVC, a interface de usuário e o 
+             componente DAO estariam, respectivamente, nas camadas:</label>
+             <div>
+                <input type="radio" name="q6" value="0"> Controller e Model<br>
+                <input type="radio" name="q6" value="1"> View e Model<br>
+                <input type="radio" name="q6" value="0"> Model e Controller<br>
+                <input type="radio" name="q6" value="0"> Model e View<br>
+        </div>
+    </div>
+    <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q6-->
+    <div id="answer-q6" class="answer" style="display: none;"></div>
+<!-- Questão 7 -->
+<div class="mb-3">
+<label class="form-label">7. Sobre as afirmativas abaixo relacionadas aos conceitos de serviços Web:</label>
+    <ul>
+        <li>REST - Representational State Transfer;</li>
+        <li>SOAP - Simple Object Access Protocol.</li>
+    </ul>
+    <label>É correto afirmar que o:</label>                
+    <div>
+        <input type="radio" name="q7" value="0"> REST é uma arquitetura de rede, baseada no protocolo XML, que permite o serviço Web e o cliente se comunicar.<br>
+        <input type="radio" name="q7" value="0"> SOAP é um protocolo independente de plataforma que faz chamadas de procedimentos remotos por meio de conexões FTP com poucas limitações.<br>
+        <input type="radio" name="q7" value="0"> SOAP é uma arquitetura de rede, baseada em mecanismos de solicitação e resposta tradicionais da Web, como solicitações GET e POST.<br>
+        <input type="radio" name="q7" value="1"> SOAP envia solicitação e resposta de seus serviços empacotados em envelopes, diferentemente do que ocorre nos serviços baseados em REST.<br>
+        <input type="radio" name="q7" value="0"> REST e o SOAP são um tipo de computação distribuída que permite a um aplicativo clientes ter acesso direto à memória principal de uma aplicação servidora.<br>
+    </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q7-->
+<div id="answer-q7" class="answer" style="display: none;"></div>
+<!-- Questão 8 -->
+<div class="mb-3">
+    <label class="form-label">8. <strong>Prova: MPRS - MPE RS - Técnico em Informática - Área Sistemas - 2015 </strong><br>
+        Dado o seguinte código JSON com Javascript: 
+        <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 18px;">
 var text ='{"employees":['+
-    '{"firstName":"John","lastName":"Does"},'+
-    '{"firstName":"Anna","lastName":"Smith"},'+
-    '{"firstName":"Peter","lastName":"Jones"}]}';
-                    </pre>
-                É correto afirmar que o código apresentado acima:</label>
-                <div>
-                    <input type="radio" name="q8" value="0"> Concatena três string formando uma classe e atribui dados a ela.<br>
-                    <input type="radio" name="q8" value="0"> Concatena três objetos formando uma classe e atribui dados a ela.<br>
-                    <input type="radio" name="q8" value="0"> Divide um objeto em três strings e atribui dados a elas.<br>
-                    <input type="radio" name="q8" value="0"> Concatena três arrays em um objeto e atribui dados a ele.<br>
-                    <input type="radio" name="q8" value="1"> Concatena três objetos em um array dentro de um objeto e atribui dados a ele.<br>
-                </div>
-            </div>
-            <!-- Questão 9 -->
+'{"firstName":"John","lastName":"Does"},'+
+'{"firstName":"Anna","lastName":"Smith"},'+
+'{"firstName":"Peter","lastName":"Jones"}]}';
+        </pre>
+    É correto afirmar que o código apresentado acima:</label>
+    <div>
+        <input type="radio" name="q8" value="0"> Concatena três string formando uma classe e atribui dados a ela<br>
+        <input type="radio" name="q8" value="0"> Concatena três objetos formando uma classe e atribui dados a ela.<br>
+        <input type="radio" name="q8" value="0"> Divide um objeto em três strings e atribui dados a elas.<br>
+        <input type="radio" name="q8" value="0"> Concatena três arrays em um objeto e atribui dados a ele.<br>
+        <input type="radio" name="q8" value="1"> Cria um array com três objetos e atribui dados a eles.<br>
+    </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q8-->
+<div id="answer-q8" class="answer" style="display: none;"></div>
+<!-- Questão 9 -->
             <div class="mb-3">
                 <label class="form-label">9. O REST (Representaional State Transfer) é um estilo de web service muito 
                     utilizado devido à sua flexibilidade e simplicidade. Um dos conceitos importantes para trabalhar 
@@ -195,243 +188,273 @@ var text ='{"employees":['+
                     <input type="radio" name="q9" value="0"> SELECT e PUT.<br>
                     <input type="radio" name="q9" value="0"> PUT e UPDATE.<br>
                 </div>
-            </div><br>
-             <!-- Questão 10 -->
-            <div class="mb-3">
-                <label class="form-label">10. <strong>FCC - 2019 - METRÔ-SP<br>Analista Desenvolvimento Gestão Júnior – Ciências da Computação</strong><br>
-                    Considere o bloco de código abaixo que utiliza JavaScript e JSON.
-                    <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 18px;">
-                 &lt;p id="exibe"&gt;&lt;/p&gt; 
-                 &lt;script&gt; 
-                  &nbsp; 
-                  var text = '{"trens":['+ 
-                  {"trem":"0145", "linha":"azul"},'+ 
-                  '{"trem":"0146", "linha":"vermelha"},'+ 
-                  '{"trem":"0147", "linha":"verde"}]}'; 
-                  &nbsp; 
-                  x = JSON.parse(text); 
-                  &nbsp; 
-                  $("#exibe").html = ------- 
-                  &lt;/script&gt;
-                </pre>
-                Para que o bloco de código exiba 0146 vermelha, a lacuna I deve ser corretamente preenchida por:  
-            </label>
-        <div>
-        <input type="radio" name="q10" value="0">x.trens[2].trem + " " + x.trens[2].linha <br>
-        <input type="radio" name="q10" value="0">text.trens[trem] + " " + text.trens[linha] <br>
-        <input type="radio" name="q10" value="0">x.trens[1].trem + " " + x.trens[1].linha <br>
-        <input type="radio" name="q10" value="0">x.trens[trem] + " " + x.trens[linha] <br>
-        <input type="radio" name="q10" value="1">text.trens[1].trem + " " + text.trens[1].linha. <br>
-    </div>
+            </div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q9-->
+<div id="answer-q9" class="answer" style="display: none;"></div>
+<!-- Questão 10 -->
+ <div class="mb-3">
+    <label class="form-label">10. <strong>FCC - 2019 - METRÔ-SP<br>Analista Desenvolvimento Gestão Júnior – Ciências da Computação</strong><br>
+        Considere o bloco de código abaixo que utiliza JavaScript e JSON.
+        <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 18px;">
+     &lt;p id="exibe"&gt;&lt;/p&gt; 
+     &lt;script&gt; 
+      &nbsp; 
+      var text = '{"trens":['+ 
+      {"trem":"0145", "linha":"azul"},'+ 
+      '{"trem":"0146", "linha":"vermelha"},'+ 
+      '{"trem":"0147", "linha":"verde"}]}'; 
+      &nbsp; 
+      x = JSON.parse(text); 
+      &nbsp; 
+      $("#exibe").html = ------- 
+      &lt;/script&gt;
+    </pre>
+    Para que o bloco de código exiba 0146 vermelha, a lacuna I deve ser corretamente preenchida por:  
+</label>
+<div>
+<input type="radio" name="q10" value="0">x.trens[2].trem + " " + x.trens[2].linha <br>
+<input type="radio" name="q10" value="0">text.trens[trem] + " " + text.trens[linha] <br>
+<input type="radio" name="q10" value="0">x.trens[1].trem + " " + x.trens[1].linha <br>
+<input type="radio" name="q10" value="0">x.trens[trem] + " " + x.trens[linha] <br>
+<input type="radio" name="q10" value="1">text.trens[1].trem + " " + text.trens[1].linha. <br>
 </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q10-->
+<div id="answer-q10" class="answer" style="display: none;"></div>
 <!-- Questão 11 -->
 <div class="mb-3">
- <label class="form-label">11. O servidor de aplicativos GlassFish trabalha com a definição de domínios, que 
-    são ambientes de execução independentes, permitindo grande flexibilidade em termos da arquitetura 
-    utilizada no ambiente. Diversas operações podem ser feitas, com relação aos domínios, através do 
-    comando as admin, como a listagem dos domínios existentes, iniciados ou não, através da opção:
+<label class="form-label">11. O servidor de aplicativos GlassFish trabalha com a definição de domínios, que 
+são ambientes de execução independentes, permitindo grande flexibilidade em termos da arquitetura 
+utilizada no ambiente. Diversas operações podem ser feitas, com relação aos domínios, através do 
+comando as admin, como a listagem dos domínios existentes, iniciados ou não, através da opção:
 </label>
-       <div>
-       <input type="radio" name="q11" value="0">refresh-domains<br>
-       <input type="radio" name="q11" value="0">start-domain<br>
-       <input type="radio" name="q11" value="0">stop-domain<br>
-       <input type="radio" name="q11" value="1">list-domains<br>
-       <input type="radio" name="q11" value="0">create-domain <br>
-   </div>
-</div><br>
+<div>
+<input type="radio" name="q11" value="0">refresh-domains<br>
+<input type="radio" name="q11" value="0">start-domain<br>
+<input type="radio" name="q11" value="0">stop-domain<br>
+<input type="radio" name="q11" value="1">list-domains<br>
+<input type="radio" name="q11" value="0">create-domain <br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q11-->
+<div id="answer-q11" class="answer" style="display: none;"></div>
 <!-- Questão 12 -->
 <div class="mb-3">
 <label class="form-label">12. O ferramental do JPA oferece diversos componentes, com finalidades específicas, 
-    no âmbito da persistência de dados, oferecendo um caminho comum para o mapeamento objeto-relacional. 
-    Qual componente, oferecido pelo JPA, é responsável pelo manuseio das diversas entidades?   
+no âmbito da persistência de dados, oferecendo um caminho comum para o mapeamento objeto-relacional. 
+Qual componente, oferecido pelo JPA, é responsável pelo manuseio das diversas entidades?   
 </label>
-       <div>
-       <input type="radio" name="q12" value="0">Column<br>
-       <input type="radio" name="q12" value="0">EntityManagerFactory<br>
-       <input type="radio" name="q12" value="1">EntityManager  <br>
-       <input type="radio" name="q12" value="0">Entity<br>
-       <input type="radio" name="q12" value="0">Transaction<br>
-   </div>
-</div><br>
+<div>
+<input type="radio" name="q12" value="0">Column<br>
+<input type="radio" name="q12" value="0">EntityManagerFactory<br>
+<input type="radio" name="q12" value="1">EntityManager  <br>
+<input type="radio" name="q12" value="0">Entity<br>
+<input type="radio" name="q12" value="0">Transaction<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q12-->
+<div id="answer-q12" class="answer" style="display: none;"></div>
 <!-- Questão 13 -->
 <div class="mb-3">
-    <label class="form-label">13.<strong>TJ-RN Prova: COMPERVE - 2020 - TJ-RN-Administrador de Sites</strong>
-        <br>O jQuery pode selecionar elementos HTML a partir de seletores, otimizando o desenvolvimento. 
-        Sobre a utilização de seletores no jQuery é correto afirmar: 
-          
-    </label>
-           <div>
-           <input type="radio" name="q13" value="0">$(´#formulario´); retornará todos os elementos da classe ¿formulario¿.<br>
-           <input type="radio" name="q13" value="0">$(´td, th´); retornará todos os elementos th  que são filhos de td.<br>
-           <input type="radio" name="q13" value="1">$(´p:first´); retornará o primeiro dos elementos p.<br>
-           <input type="radio" name="q13" value="0">$(´.paragrafo´); retornará o elemento com id igual a ¿paragrafo¿.<br>
-           <input type="radio" name="q13" value="0">$(´p#first´); retornará o primeiro dos elementos p.<br>
-       </div>
-    </div><br>
-    <!-- Questão 14 -->
+<label class="form-label">13.<strong>TJ-RN Prova: COMPERVE - 2020 - TJ-RN-Administrador de Sites</strong>
+<br>O jQuery pode selecionar elementos HTML a partir de seletores, otimizando o desenvolvimento. 
+Sobre a utilização de seletores no jQuery é correto afirmar: 
+
+</label>
+<div>
+<input type="radio" name="q13" value="0">$(´#formulario´); retornará todos os elementos da classe ¿formulario¿.<br>
+<input type="radio" name="q13" value="0">$(´td, th´); retornará todos os elementos th  que são filhos de td.<br>
+<input type="radio" name="q13" value="1">$(´p:first´); retornará o primeiro dos elementos p.<br>
+<input type="radio" name="q13" value="0">$(´.paragrafo´); retornará o elemento com id igual a ¿paragrafo¿.<br>
+<input type="radio" name="q13" value="0">$(´p#first´); retornará o primeiro dos elementos p.<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q13-->
+<div id="answer-q13" class="answer" style="display: none;"></div>
+<!-- Questão 14 -->
 <div class="mb-3">
-    <label class="form-label">14.Observe a linha de comando a seguir. <br>
-        <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 18px;">
-            Statement st = Conexao.getConection().createStatement();    
-           </pre>
-           Indique qual deve ser o comando seguinte:    
-    </label>
-           <div>
-           <input type="radio" name="q14" value="1">ResultSet rs = st.executeQuery("select *  from ALUNOS");<br>
-           <input type="radio" name="q14" value="0">ResultSet rs = st.executeUpdate("select * fr om ALUNOS");<br>
-           <input type="radio" name="q14" value="0">$(´p:first´); retornará o primeiro dos elementos p.<br>
-           <input type="radio" name="q14" value="0">List< Aluno > ls = st.prepareStatement("select * fr om ALUNOS"); (   )  List ls = st().executeUpdate("select *  from ALUNOS");<br>
-           <input type="radio" name="q14" value="0">List< Aluno > ls = st.executeQuery("select  * from ALUNOS");<br>
-       </div>
-    </div><br>
-    <!-- Questão 15 -->
-<div class="mb-3">
-    <label class="form-label">15.Uma página JSP permite gerar conteúdo dinâmico através de um conjunto específico de artefatos, os quais são reconhecidos pelo contêiner
-         Web para geração do Servlet equivalente. Entre os artefatos, um deles permite a identificação do tipo conteúdo, importação de bibliotecas e definir a 
-         página de erro entre outras configurações possíveis. Qual dos artefatos está sendo descrito acima? <br>   
-    </label>
-           <div>
-           <input type="radio" name="q15" value="0">Scriptlet<br>
-           <input type="radio" name="q15" value="0">Etiqueta HTML<br>
-           <input type="radio" name="q15" value="1">Diretiva<br>
-           <input type="radio" name="q15" value="0">Etiqueta XML<br>
-           <input type="radio" name="q15" value="0">Etiqueta de Substituição<br>
-       </div>
-    </div><br>
-        <!-- Questão 16 -->
-<div class="mb-3">
-    <label class="form-label">16.Sobre a biblioteca Jquery, é <i>INCORRETA</i> a seguinte afirmação <br>   
-    </label>
-        <div>
-           <input type="radio" name="q16" value="0">Possui com um conjunto de funções presentes no objeto JQuery e que geralmente é utilizado ao atribuí-lo ao caractere "$". <br>
-           <input type="radio" name="q16" value="0">Permite manipular a Árvore DOM, modificando sua estrutura e também o conteúdo.<br>
-           <input type="radio" name="q16" value="0">Permite manipular o CSS de uma página web dinamicamente em tempo de execução.<br>
-           <input type="radio" name="q16" value="1">É um framework client-side desenvolvido na linguagem Java para a manipulação de elementos HTML.<br>
-           <input type="radio" name="q16" value="0">Permite fazer a comunicação, chamada AJAX (Asynchronous Javascript  and XML), entre cliente e servidor sem a  
-           necessidade de recarregar a página web por completo. <br>
-       </div>
+<label class="form-label">14.Observe a linha de comando a seguir. <br>
+<pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4;font-size: 18px;">
+Statement st = Conexao.getConection().createStatement();    
+</pre>
+Indique qual deve ser o comando seguinte:    
+</label>
+<div>
+<input type="radio" name="q14" value="1">ResultSet rs = st.executeQuery("select *  from ALUNOS");<br>
+<input type="radio" name="q14" value="0">ResultSet rs = st.executeUpdate("select * fr om ALUNOS");<br>
+<input type="radio" name="q14" value="0">$(´p:first´); retornará o primeiro dos elementos p.<br>
+<input type="radio" name="q14" value="0">List< Aluno > ls = st.prepareStatement("select * fr om ALUNOS"); (   )  List ls = st().executeUpdate("select *  from ALUNOS");<br>
+<input type="radio" name="q14" value="0">List< Aluno > ls = st.executeQuery("select  * from ALUNOS");<br>
+</div>
 </div><br>
-    <!-- Questão 17 -->
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q14-->
+<div id="answer-q14" class="answer" style="display: none;"></div>
+<!-- Questão 15 -->
 <div class="mb-3">
-    <label class="form-label">17.O comando jQuery para selecionar e esconder todos os elementos com a classe <i>"escondido"</i>, de uma página é:<br>   
-    </label>
-           <div>
-           <input type="radio" name="q17" value="0">$(".escondido").hide()<br>
-           <input type="radio" name="q17" value="0">$(hide).escondido()<br>
-           <input type="radio" name="q17" value="0">$("#escondido").hide()<br>
-           <input type="radio" name="q17" value="1">$(class=".escondido").hide()<br>
-           <input type="radio" name="q17" value="0">$(escondido).hide()<br>
-       </div>
-    </div><br>
+<label class="form-label">15.Uma página JSP permite gerar conteúdo dinâmico através de um conjunto específico de artefatos, os quais são reconhecidos pelo contêiner
+Web para geração do Servlet equivalente. Entre os artefatos, um deles permite a identificação do tipo conteúdo, importação de bibliotecas e definir a 
+página de erro entre outras configurações possíveis. Qual dos artefatos está sendo descrito acima? <br>   
+</label>
+<div>
+<input type="radio" name="q15" value="0">Scriptlet<br>
+<input type="radio" name="q15" value="0">Etiqueta HTML<br>
+<input type="radio" name="q15" value="1">Diretiva<br>
+<input type="radio" name="q15" value="0">Etiqueta XML<br>
+<input type="radio" name="q15" value="0">Etiqueta de Substituição<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q15-->
+<div id="answer-q15" class="answer" style="display: none;"></div>
+<!-- Questão 16 -->
+<div class="mb-3">
+<label class="form-label">16.Sobre a biblioteca Jquery, é <i>INCORRETA</i> a seguinte afirmação <br>   
+</label>
+<div>
+<input type="radio" name="q16" value="0">Possui com um conjunto de funções presentes no objeto JQuery e que geralmente é utilizado ao atribuí-lo ao caractere "$". <br>
+<input type="radio" name="q16" value="0">Permite manipular a Árvore DOM, modificando sua estrutura e também o conteúdo.<br>
+<input type="radio" name="q16" value="0">Permite manipular o CSS de uma página web dinamicamente em tempo de execução.<br>
+<input type="radio" name="q16" value="1">É um framework client-side desenvolvido na linguagem Java para a manipulação de elementos HTML.<br>
+<input type="radio" name="q16" value="0">Permite fazer a comunicação, chamada AJAX (Asynchronous Javascript  and XML), entre cliente e servidor sem a  
+necessidade de recarregar a página web por completo. <br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q16-->
+<div id="answer-q16" class="answer" style="display: none;"></div>
+<!-- Questão 17 -->
+<div class="mb-3">
+<label class="form-label"><strong>Prova: FGV - 2016 - IBGE - Tecnologista - Programação Visual - Webdesign </strong><br>
+17.O comando jQuery para selecionar e esconder todos os elementos com a classe <i>"escondido"</i>, de uma página é:<br>   
+</label>
+<div>
+<input type="radio" name="q17" value="1">$(".escondido").hide()<br>
+<input type="radio" name="q17" value="0">$(hide).escondido()<br>
+<input type="radio" name="q17" value="0">$("#escondido").hide()<br>
+<input type="radio" name="q17" value="0">$(class=".escondido").hide()<br>
+<input type="radio" name="q17" value="0">$(escondido).hide()<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q17-->
+<div id="answer-q17" class="answer" style="display: none;"></div>
 <!-- Questão 18 -->
 <div class="mb-3">
-    <label class="form-label">18. Considere as seguintes afirmações sobre XML DOM:</label>
-    <ol>
-        <li>
-            Após ser carregado em um objeto DOM, o documento XML só pode ser consultado. Operações de inserção, exclusão e alteração não são permitidas depois que a árvore DOM 
-            é gerada.
-        </li><br>
-        <li>
-            XML DOM define um padrão para acessar e manipular documentos XML. O DOM apresenta um documento XML como uma árvore. Todo documento é um nodo da árvore.
-             Cada elemento XML é um nodo de elemento. O texto nos elementos são nodos de texto. Cada atributo é um nodo de atributo.<br>
-        </li><br>
-        <li>
-            O relacionamento entre os nodos é definido como propriedades dos nodos. Alguns exemplos de relacionamentos entre os nodos são: nodo pai, nodo filho, 
-            primeiro filho, último filho, etc.
-        </li>
-    </ol>
-    <label>Quais estão corretas?</label>
+<label class="form-label"><strong>Prova: MPRS - MPE RS - Técnico em Informática - Área Sistemas - 2015 </strong><br>
+18. Considere as seguintes afirmações sobre XML DOM:</label>
+<ol>
+<li>
+Após ser carregado em um objeto DOM, o documento XML só pode ser consultado. Operações de inserção, exclusão e alteração não são permitidas depois que a árvore DOM 
+é gerada.
+</li><br>
+<li>
+XML DOM define um padrão para acessar e manipular documentos XML. O DOM apresenta um documento XML como uma árvore. Todo documento é um nodo da árvore.
+ Cada elemento XML é um nodo de elemento. O texto nos elementos são nodos de texto. Cada atributo é um nodo de atributo.<br>
+</li><br>
+<li>
+O relacionamento entre os nodos é definido como propriedades dos nodos. Alguns exemplos de relacionamentos entre os nodos são: nodo pai, nodo filho, 
+primeiro filho, último filho, etc.
+</li>
+</ol>
+<label>Quais estão corretas?</label>
 </div>
-    </label>
-        <div>
-           <input type="radio" name="q18" value="0"> I, II e III.<br>
-           <input type="radio" name="q18" value="0">Apenas I.<br>
-           <input type="radio" name="q18" value="0">Apenas II.<br>
-           <input type="radio" name="q18" value="0">Apenas II e III.<br>
-           <input type="radio" name="q18" value="1">Apenas III.<br>
-       </div>
-    <!-- Questão 19 -->
+</label>
+<div>
+<input type="radio" name="q18" value="0"> I, II e III.<br>
+<input type="radio" name="q18" value="0">Apenas I.<br>
+<input type="radio" name="q18" value="0">Apenas II.<br>
+<input type="radio" name="q18" value="1">Apenas II e III.<br>
+<input type="radio" name="q18" value="0">Apenas III.<br>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q18-->
+<div id="answer-q18" class="answer" style="display: none;"></div>
+<!-- Questão 19 -->
 <div class="mb-3">
-    <label class="form-label">19. Um aplicativo criado para o servidor Tomcat obedece a uma estrutura bem definida, onde alguns arquivos XML podem ser utilizados
-         para efetuar diversas configurações, algo que tem sido substituído pelo uso de anotações nas versões mais recentes. Segundo o modelo original, em qual 
-         arquivo são configurados os mapeamentos de Servlets?
-    </label>
-    <div>
-        <input type="radio" name="q19" value="0">context.xml<br>
-        <input type="radio" name="q19" value="0">faces-config.xml<br>
-        <input type="radio" name="q19" value="0">tomcat-users.xml<br>
-        <input type="radio" name="q19" value="1">web.xml<br>
-    </div>
+<label class="form-label">19. Um aplicativo criado para o servidor Tomcat obedece a uma estrutura bem definida, onde alguns arquivos XML podem ser utilizados
+para efetuar diversas configurações, algo que tem sido substituído pelo uso de anotações nas versões mais recentes. Segundo o modelo original, em qual 
+arquivo são configurados os mapeamentos de Servlets?
+</label>
+<div>
+<input type="radio" name="q19" value="0">context.xml<br>
+<input type="radio" name="q19" value="0">faces-config.xml<br>
+<input type="radio" name="q19" value="0">tomcat-users.xml<br>
+<input type="radio" name="q19" value="1">web.xml<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q19-->
+<div id="answer-q19" class="answer" style="display: none;"></div>
+<!-- Questão 20 -->
+<div class="mb-3">
+<label class="form-label">20.Padrões arquiteturais definem os componentes estruturais de um sistema, e a forma de comunicação entre eles ou com outros sistemas,
+ organizando as regras gerais para a concepção de aplicativos com algum perfil funcional específico. Plataformas de objetos distribuídos, como o CORBA,
+  trabalham em um padrão arquitetural denominado:   
+</label>
+<div>
+<input type="radio" name="q20" value="1">Broker<br>
+<input type="radio" name="q20" value="0">MVC<br>
+<input type="radio" name="q20" value="0">Event-Driven<br>
+<input type="radio" name="q20" value="0">Pipeline<br>
+<input type="radio" name="q20" value="0">PAC<br>
+</div>
 </div><br>
-    <!-- Questão 20 -->
-    <div class="mb-3">
-        <label class="form-label">20.Padrões arquiteturais definem os componentes estruturais de um sistema, e a forma de comunicação entre eles ou com outros sistemas,
-             organizando as regras gerais para a concepção de aplicativos com algum perfil funcional específico. Plataformas de objetos distribuídos, como o CORBA,
-              trabalham em um padrão arquitetural denominado:   
-        </label>
-        <div>
-            <input type="radio" name="q20" value="1">Broker<br>
-            <input type="radio" name="q20" value="0">MVC<br>
-            <input type="radio" name="q20" value="0">Event-Driven<br>
-            <input type="radio" name="q20" value="0">Pipeline<br>
-            <input type="radio" name="q20" value="0">PAC<br>
-        </div>
-    </div><br>
-        <!-- Questão 21 -->
-        <div class="mb-3">
-            <label class="form-label">21.As mensagerias são um ferramental de ampla utilização em ambientes corporativos, e entre os diferentes tipos de EJBs,
-                 os MDBs são  os componentes responsáveis pelo comportamento assíncrono do sistema, baseado na  utilização de mensagerias. Assinale a 
-                 alternativa correta com relação aos Message  Driven Benas, ou MDBs:   
-            </label>
-            <div>
-                <input type="radio" name="q21" value="0">Eles podem guardar informações de estado<br>
-                <input type="radio" name="q21" value="0">Precisam implementar a interface SessionListener<br>
-                <input type="radio" name="q21" value="1">Tratam as mensagens através de seu único método, denominado on Message<br>
-                <input type="radio" name="q21" value="0">Necessitam de interfaces @Local e @Remote<br>
-                <input type="radio" name="q21" value="0">São definidos pela anotação @Message<br>
-            </div>
-        </div><br>
-                <!-- Questão 22 -->
-                <div class="mb-3">
-                    <label class="form-label">22.Os web services são componentes de software na web que podem fornecer determinados serviços a aplicações criadas em 
-                        diferentes linguagens. Podem usar o protocolo SOAP para transferência de mensagens em formato XML. Para descrever a estrutura destas mensagens 
-                        geralmente utiliza-se:    
-                    </label>
-                    <div>
-                        <input type="radio" name="q22" value="1">WSDL<br>
-                        <input type="radio" name="q22" value="0">RESTFUL<br>
-                        <input type="radio" name="q22" value="0">CORBA<br>
-                        <input type="radio" name="q22" value="0">REST<br>
-                        <input type="radio" name="q22" value="0">HTML<br>
-                    </div>
-                </div><br>
-               <!-- Questão 22 -->
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q20-->
+<div id="answer-q20" class="answer" style="display: none;"></div>
+<!-- Questão 21 -->
 <div class="mb-3">
-    <label class="form-label">
-        23. Ao contrário da palavra-chave "var", a palavra-chave "let" tem como função restringir o acesso a variáveis dentro de um bloco. 
-        Neste sentido, o que acontece quando executamos o código abaixo em um navegador com suporte a ECMAScript versão ES6 ou superior?
-    </label>
-    <pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4; font-size: 18px;">
-        &lt;!DOCTYPE html&gt;
-        &lt;html lang="pt-BR"&gt;
-        &lt;head&gt;
-            &lt;meta charset="utf-8"&gt;
-            &lt;title&gt;Escopo de variável em JS&lt;/title&gt;
-            &lt;script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.js"&gt;&lt;/script&gt;
-        &lt;/head&gt;
-        &lt;body&gt;
-            &lt;script type="text/javascript"&gt;
-                let teste = 200;
+<label class="form-label">21.As mensagerias são um ferramental de ampla utilização em ambientes corporativos, e entre os diferentes tipos de EJBs,
+ os MDBs são  os componentes responsáveis pelo comportamento assíncrono do sistema, baseado na  utilização de mensagerias. Assinale a 
+ alternativa correta com relação aos Message  Driven Benas, ou MDBs:   
+</label>
+<div>
+<input type="radio" name="q21" value="0">Eles podem guardar informações de estado<br>
+<input type="radio" name="q21" value="0">Precisam implementar a interface SessionListener<br>
+<input type="radio" name="q21" value="1">Tratam as mensagens através de seu único método, denominado on Message<br>
+<input type="radio" name="q21" value="0">Necessitam de interfaces @Local e @Remote<br>
+<input type="radio" name="q21" value="0">São definidos pela anotação @Message<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q21-->
+<div id="answer-q21" class="answer" style="display: none;"></div>
+<!-- Questão 22 -->
+<div class="mb-3">
+<label class="form-label">22.Os web services são componentes de software na web que podem fornecer determinados serviços a aplicações criadas em 
+diferentes linguagens. Podem usar o protocolo SOAP para transferência de mensagens em formato XML. Para descrever a estrutura destas mensagens 
+geralmente utiliza-se:    
+</label>
+<div>
+<input type="radio" name="q22" value="1">WSDL<br>
+<input type="radio" name="q22" value="0">RESTFUL<br>
+<input type="radio" name="q22" value="0">CORBA<br>
+<input type="radio" name="q22" value="0">REST<br>
+<input type="radio" name="q22" value="0">HTML<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q22-->
+<div id="answer-q22" class="answer" style="display: none;"></div>
 
-                if (teste &gt; 100) {
-                    let teste = 1;
-                }
+<!-- Questão 23 -->
+<div class="mb-3">
+<label class="form-label">23. Ao contrário da palavra-chave "var", a palavra-chave "let" tem como função restringir o acesso a variáveis dentro de um bloco. 
+Neste sentido, o que acontece quando executamos o código abaixo em um navegador com suporte a ECMAScript versão ES6 ou superior?
+</label>
+<pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4; font-size: 18px;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;Escopo de variável em JS&lt;/title&gt;
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type="text/javascript"&gt;
+    let teste = 200;
 
-                console.log(teste);
-            &lt;/script&gt;
-        &lt;/body&gt;
-        &lt;/html&gt;
-    </pre>
+    if (teste &gt; 100) {
+        let teste = 1;
+    }
+
+    console.log(teste);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 </div>
 <input type="radio" name="q23" value="0">A declaração da variável teste utilizando let funcionaria da mesma forma se utilizássemos var. <br>
 <input type="radio" name="q23" value="0">Será exibido no console do navegador o valor 1.<br>
@@ -439,21 +462,51 @@ var text ='{"employees":['+
 <input type="radio" name="q23" value="1">O valor da variável teste será sempre 200.<br>
 <input type="radio" name="q23" value="0">A instrução let introduz um escopo de bloco a variável teste.<br>
 </div>
-</div><br>
-<!-- Botão de Enviar -->
-            <button type="submit" id="submit-quiz" class="btn btn-primary">Enviar Respostas</button><!-- Botão para enviar as respostas -->
-        </form>
-        <div id="result" class="text-center"></div>
-        <div id="answers" style="display: none;"></div>
-    </div>
+</div>
+<div class="container quiz-container">
+    <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q23-->
+<div id="answer-q23" class="answer" style="display: none;"></div>
+</div>
 
+<div class="container quiz-container">
+<!-- Questão 24 -->
+24. <strong>FCC - 2022 - TRT - 22ª Região (PI) - Analista Judiciário - Tecnologia da Informação</strong><br>
+Considere o bloco XML abaixo:
+</label>
+<pre style="font-family: 'Courier New', Courier, monospace; font-weight: bold; tab-size: 4; font-size: 18px;">
+&lt;processos&gt;
+&lt;processo&gt;
+&lt;numero&gt;00001001120225020061&lt;/numero&gt; 
+&lt;ano&gt;2022&lt;/ano&gt;
+&lt;/processo&gt;
+&lt;/processos&gt;
+</pre>
+<label>Uma representação correta desse bloco usando JSON é:</label>
+<div class="container quiz-container">
+<input type="radio" name="q24" value="0">["processos"( { "numero":"00001001120225020061", "ano":"2022" } )]<br>
+<input type="radio" name="q24" value="1">{"processos":[ { "numero":"00001001120225020061", "ano":"2022" } ] }<br>
+<input type="radio" name="q24" value="0">&lt;json:element name="processos"&gt; &lt;json:attribute name="numero" value="00001001120225020061" type="json:string"/&gt; &lt;json:attribute name="ano" value="2022" type="json:string"/&gt; &lt;/json:element&gt;<br>
+<input type="radio" name="q24" value="0">{ " root " : " processos"[ { "element":"numero" "value":"00001001120225020061" }, { "element":"ano" "value":"2022" } ]  }<br>
+<input type="radio" name="q24" value="0">&lt;json:element name="processos"&gt; &lt;json:element name="numero" value="00001001120225020061" /&gt; &lt;json:element name="ano" value="2022" /&gt; &lt;/json:element&gt;<br>
+</div></div>
+<div class="container quiz-container">
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q24-->
+<div id="answer-q24" class="answer" style="display: none;"></div>
+</div>
+</div>
+<!-- Botão de Enviar -->
+<div class="container quiz-container">
+    <button type="submit" id="submit-quiz" class="btn btn-primary">Enviar Respostas</button>
+    <div id="result" class="text-center"></div>
+    <div id="answers" style="display: none;"></div>
+</div>
+              </form>
+            </div>
         <!-- Chamando Função de Proteção Básica Contra Ataques XSS-->
         <script src="/public/js/functions/sanitizeInput.js"></script>
-    <!-- Link para o JS do jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Link para o JS personalizado -->
-    <script src="/public/js/script.js"></script>
+        <!-- Link para o JS do jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Link para o JS personalizado -->
+        <script src="/public/js/script.js"></script>
 </body>
 </html>
-
-

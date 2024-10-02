@@ -19,10 +19,23 @@ body {
     padding: 10px;
 }
 
+/* Estilo ajustado para o bloco <pre> */
+pre {
+    white-space: pre-wrap; /* Quebra de linha para ajustar o conteúdo ao container */
+    word-wrap: break-word; /* Força a quebra de linha quando necessário */
+    margin: 0; /* Remove qualquer margem adicional do <pre> */
+    padding: 10px; /* Adiciona um pequeno padding para espaçamento interno */
+    background-color: #f5f5f5; /* Cor de fundo para destacar o código */
+    border-radius: 5px; /* Borda arredondada */
+    overflow-x: auto; /* Adiciona rolagem horizontal para evitar estouro */
+}
+
+/* Ajuste no container da questão */
 .mb-3 {
-    background-color: whitesmoke;
+    margin-bottom: 20px; /* Espaçamento inferior consistente */
     padding: 15px;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 .quiz-container {
@@ -43,6 +56,7 @@ body {
 .quiz-container label {
     font-size: 18px;
     margin-bottom: 10px;
+    display: block;
 }
 
 /* Estilo para as opções de resposta */
@@ -52,8 +66,10 @@ body {
     gap: 10px; /* Espaçamento entre as opções */
 }
 
+/* Estilo para inputs e labels */
 .quiz-container input[type="radio"] {
-    margin-right: 10px; /* Espaçamento entre o input e o texto */
+    margin-right: 10px;
+    font-size: 18px;
 }
 
 .quiz-container input {

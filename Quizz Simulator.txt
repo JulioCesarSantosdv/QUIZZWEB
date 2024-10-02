@@ -2,12 +2,12 @@
 │
 │
 │
-├── /assets/                # Pasta para armazenar recursos estáticos
-│   ├── /images/            # Imagens usadas no projeto (ícones, logos, etc.)
-│   │   └── quiz-logo.png   # Exemplo de arquivo de imagem
-│   ├── /fonts/             # Fontes personalizadas do projeto
-│   │   └── Roboto-Regular.ttf # Exemplo de arquivo de fonte
-│   └── /icons/             # Ícones usados no projeto
+├── /assets/                     # Pasta para armazenar recursos estáticos
+│   ├── /images/                 # Imagens usadas no projeto (ícones, logos, etc.)
+│   │   └── quiz-logo.png        # Exemplo de arquivo de imagem
+│   ├── /fonts/                  # Fontes personalizadas do projeto
+│   │   └── Roboto-Regular.ttf   # Exemplo de arquivo de fonte
+│   └── /icons/                  # Ícones usados no projeto
 │       └── timer-icon.svg  
 │
 │
@@ -25,13 +25,14 @@
 │       
 │
 │
-├── /node_modules/
+├── /node_modules/          #Pacote node
 │   ├── /(..)/
 │   ├── /@popperjs/
 │   │   └── (..)  
 │   └── /bootstrap/
-│       └── (..)
-├── /server/
+│       └── (..) 
+│        
+├── /server/     #Configurações da Lógica de Backend 
 │   └── server.js
 │
 ├── package.json 
