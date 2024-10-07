@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="xv-responsive is-desktop" lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</title>
+    <!-- Importando Fonte da Google -->
+    <link href="/assets/fonts/Roboto-Regular.ttf">
+    <!-- Link para o CSS do Bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/css/bootstrap.min.css">
+    <!-- Link para o CSS Personalizado -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <!-- Compatibilidade com IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Conteúdo de Política de Segurança -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+</head>
+<body>
+    <div class="container quiz-container">
+        <h1 class="text-center">SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</h1>
+        <div class="timer text-center">Tempo restante: <span id="time">40</span> minutos</div>
+        <form id="quiz-form">
+            <div id="questions-container"></div>
+            <button type="submit" id="submit-quiz" class="btn btn-primary">Enviar Respostas</button>
+            <div id="result" class="text-center"></div>
+        </form>
+    </div>
+
+ 
+    <script src="/public/js/script.js"></script> <!-- Link para o JS personalizado -->
+    <script src="/public/js/jquery-3.7.1.min.js"></script> <!-- Link para o JS do jQuery -->
+    <!-- Inclusão de Funções: -->
+    <script src="/public/js/functions/sanitizeInput.js"></script> <!-- Função de Proteção Básica Contra Ataques XSS -->
+    <script src="/public/js/functions/gradeQuiz.js"></script> <!-- Função para avaliar o quiz -->
+</body>
+</html>

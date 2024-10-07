@@ -1,7 +1,5 @@
 /QUIZZWEB/
 │
-│
-│
 ├── /assets/                     # Pasta para armazenar recursos estáticos
 │   ├── /images/                 # Imagens usadas no projeto (ícones, logos, etc.)
 │   │   └── quiz-logo.png        # Exemplo de arquivo de imagem
@@ -10,32 +8,38 @@
 │   └── /icons/                  # Ícones usados no projeto
 │       └── timer-icon.svg  
 │
+├── /public/                     # FrontEnd do Projeto
+│   ├── index.html               # Página principal do quiz        
+│   ├── /css/                    # Diretório de Estilos
+│   │   └── styles.css           # Estilos personalizados do quiz
+│   ├── /js/                     
+│   │   └── /functions/          # Diretório de Funções Javascript
+│   │       ├── gradeQuiz.js     # Função para avaliar o quiz           
+│   │       ├── sanitizeInput.js # Função de Proteção Básica Contra Ataques XSS       
+│   │       └── shuffle.js       # Função Para embaralhar as questões a cada carregamento     
+│   └── script.js                # Lógica do quiz com temporizador
 │
-│ 
-├── /public/        	# FrontEnd do Projeto
-│   │    
-│   ├── index.html    	 # Página principal do quiz        
-│   ├── /css/            # Diretório de Estilos
-│   │   └── styles.css   #Estilos personalizados do quiz
-│   │
-│   ├── /js/
-│   │   │    
-│   │   └── /functions/       # Diretório de Funções Javascript
-│   └── script.js             # Lógica do quiz com temporizador
-│       
+├── /pages/                      # Diretório para páginas secundárias
+│   ├──────/1º/            # Página com 5 links para outras páginas
+│   ├────── /2º/             # Outra página secundária
+│   ├────── /3º/             # Terceira página secundária
+│   ├────── /4º/              # Quarta página secundária
+│   ├────── /5º/  
+│   ├────── /6º/               # Quinta página secundária         
+│   ├────── /7º/               # Quinta página secundária 
+│   └────── /8º/                # Sexta página secundária
+│            │
+│            └──/simulados/
+│                        └───simulados_programacao_clientes_servidor.html
 │
-│
-├── /node_modules/          #Pacote node
-│   ├── /(..)/
-│   ├── /@popperjs/
-│   │   └── (..)  
+├── /node_modules/               # Pacote node
+│   ├── /(..)/                   # Estrutura de diretórios do node
 │   └── /bootstrap/
 │       └── (..) 
 │        
-├── /server/     #Configurações da Lógica de Backend 
+├── /server/                     # Configurações da Lógica de Backend 
 │   └── server.js
 │
 ├── package.json 
 ├── package-lock.json             
-└── README.md               
-
+└── README.md   

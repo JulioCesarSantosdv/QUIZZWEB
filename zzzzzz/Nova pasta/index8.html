@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Big Data</title>
+    <link rel="stylesheet" href="/zzzzzz/Nova pasta/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcards de Big Data</h1>
+        <div id="flashcard" class="flashcard">
+            <div class="front">
+                <p id="question">Quem sou eu? Sou um conjunto de dados que cresce a uma velocidade tão alta que se torna difícil de processar usando métodos tradicionais.</p>
+            </div>
+            <div class="back">
+                <p id="answer">Big Data</p>
+            </div>
+        </div>
+        <h1>Flashcards de Big Data</h1>
+        <div id="flashcard" class="flashcard">
+            <div class="front">
+                <p id="question">Quem sou eu? Sou composta pelos dados (em arquivos físicos) e pelos metadados (no catálogo), que descrevem as tabelas, colunas, tipos de dados, etc.</p>
+            </div>
+            <div class="back">
+                <p id="answer">Base de Dados</p>
+            </div>
+        </div>
+        <div id="flashcard" class="flashcard">
+            <div class="front">
+                <p id="question">Quem sou eu? Sou um software que permite manipular consultas e acessar dados armazenados no banco de dados.</p>
+            </div>
+            <div class="back">
+                <p id="answer">SGBD (Sistema Gerenciador de Banco de Dados)</p>
+            </div>
+        </div>
+        <div id="flashcard" class="flashcard">
+            <div class="front">
+                <p id="question">Tabelas, esquemas, visões, consultas, relatórios, procedimentos, triggers (gatilhos). São exemplos de objetos que compõe:</p>
+            </div>
+            <div class="back">
+                <p id="answer"> um Banco de Dados</p>
+            </div>
+        </div>
+        <button id="flip-button">Virar Flashcard</button>
+        <div class="timer">
+            <p>Tempo: <span id="timer">30</span> segundos</p>
+        </div>
+        <div class="rating">
+            <button onclick="rate('fácil')">Fácil</button>
+            <button onclick="rate('mediano')">Mediano</button>
+            <button onclick="rate('difícil')">Difícil</button>
+        </div>
+    </div>
+    <script src="/zzzzzz/Nova pasta/script.js"></script>
+    <script src="/zzzzzz/Nova pasta/showNextFlashcard.js"></script>
+</body>
+</html>

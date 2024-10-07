@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html class="xv-responsive is-desktop" lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIMULADO - TÓPICOS DE BIG DATA EM PYTHON </title>
+        <!-- Importando Fonte da Google -->
+         <link href="/assets/fonts/Roboto-Regular.ttf">
+         <!--Link para o CSS do Bootstrap-->
+          <link rel="stylesheet" href="/node_modules/bootstrap/css/bootstrap.min.css">
+          <!-- Link para o CSS Personalizado-->
+           <link rel="stylesheet" href="/public/css/main.css">
+           <!--Compatibilidade com IE-->
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <!-- Conteúdo de Política de Segurança-->
+            <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+        </head>
+        <body>
+            <div class="container quiz-container">
+                <h1 class="text-center">SIMULADO - TÓPICOS DE BIG DATA EM PYTHON </h1>
+                <!-- Temporizador do quiz -->
+                 <div class="timer text-center">Tempo restante: <span id="time">40</span> minutos</div>
+                 <!-- Início do formulário de perguntas -->
+                  <form id="quiz-form">
+                    <!-- Questão 1 -->
+                     <div class="mb-3">
+                        <label class="form-label">1. O boom da IA se deve ao surgimento de novas tecnologias e dispositivos que por estarem sempre conectados produzem uma quantidade enorme de dados. Estes dados que 
+                            alimentam os modelos de aprendizado de máquina também são conhecidos como: </label>
+    <div>
+        <input type="radio" name="q1" value="0">Informações<br>
+        <input type="radio" name="q1" value="0">Dados Faltantes<br>
+        <input type="radio" name="q1" value="0">Observações<br>
+        <input type="radio" name="q1" value="0">Conhecimento<br>
+        <input type="radio" name="q1" value="1"> Big Data
+    </div>
+</div>
+    <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q1-->
+    <div id="answer-q1" class="answer" style="display: none;"></div>
+<br>
+<!-- Questão 2 -->
+<div class="mb-3">
+    <label class="form-label">2. Qual o processo irmão do KDD que é utilizado comumente no âmbito industrial? </label>
+     
+    <div>
+        <input type="radio" name="q2" value="0">KDD-DM<br>
+        <input type="radio" name="q2" value="0">SIGM<br>
+        <input type="radio" name="q2" value="0">KDM<br>
+        <input type="radio" name="q2" value="1">CRISP-DM<br>
+        <input type="radio" name="q2" value="0">SIGKDD
+    </div>
+     <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q2-->
+    <div id="answer-q2" class="answer" style="display: none;"></div>
+</div>
+<!-- Questão 3 -->
+<div class="mb-3">
+    <label class="form-label">3. O seguinte constructo da linguagem Python representa o <i>condicional simples:</i></label>
+    <div>
+        <input type="radio" name="q3" value="0">while<br>
+        <input type="radio" name="q3" value="0">for<br>
+        <input type="radio" name="q3" value="0">with<br>
+        <input type="radio" name="q3" value="0">else<br>
+        <input type="radio" name="q3" value="1">if<br>
+    </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q3-->
+<div id="answer-q3" class="answer" style="display: none;"></div>
+
+<!-- Questão 4 -->
+<div class="mb-3">
+    <label class="form-label">4. No contexto de Coleta de Dados, o que podemos afirmar sobre <i>Dados Primários:</i>
+    <ol style="list-style-type: upper-roman;">
+        <li>São dados obtidos em primeira mão pelo cientista de dados ou pelo analista de dados.</li>
+        <li>São dados que precisam ser pré-processados para análise, e serão feitos exclusivamente no primeiro momento pelo dono dos dados, o analista em questão.</li>
+        <li>São obtidos através de softwares de monitoramento de logs, surveys, e bancos de dados.</li>
+    </ol>
+    <p>Analise as frases listadas e assinale a alternativa correta.</p>
+
+<input type="radio" name="q4" value="0">Apenas a opção II.<br>
+<input type="radio" name="q4" value="1">As opções I, II, e III estão corretas.<br>
+<input type="radio" name="q4" value="0">Apenas as opções I e III.<br>
+<input type="radio" name="q4" value="0">Apenas a opção I.<br>
+<input type="radio" name="q4" value="0">Apenas as opções II e III.<br>
+
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q4-->
+<div id="answer-q4" class="answer" style="display: none;"></div>
+
+<!-- Questão 5 -->
+<div class="mb-3">
+<label class="form-label">5. Selecione a opção correta que contenha as categorias em que transformações
+     podem ser classificadas. </label>
+<div>
+<input type="radio" name="q5" value="0">Separação e finalização <br>
+<input type="radio" name="q5" value="1">Mapeamento e redução<br>
+<input type="radio" name="q5" value="0">Embaralhamento e redução<br>
+<input type="radio" name="q5" value="0">Estreitas e amplas<br>
+<input type="radio" name="q5" value="0">Mapeamento e partição<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q5-->
+<div id="answer-q5" class="answer" style="display: none;"></div>
+<!-- Questão 6 -->
+<div class="mb-3">
+<label class="form-label">6. A escolha adequada de uma linguagem de programação é fundamental para a maximização dos
+     resultados almejados. Nesse sentido, selecione a opção que contém a linguagem de programação mais adequada 
+     para desenvolver aplicações para o Spark.</label>
+             <div>
+                <input type="radio" name="q6" value="0">Java<br>
+                <input type="radio" name="q6" value="0">Script<br>
+                <input type="radio" name="q6" value="1">Scala<br>
+                <input type="radio" name="q6" value="0">Python<br>
+                <input type="radio" name="q6" value="0">R<br>
+        </div>
+    </div>
+    <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q6-->
+    <div id="answer-q6" class="answer" style="display: none;"></div>
+<!-- Questão 7 -->
+<div class="mb-3">
+<label class="form-label">7. A respeito dos componentes do ecossistema do hadoop, selecione a opção correta
+     que apresenta o componente responsável pelo gerenciamento dos clusters. </label>
+                
+    <div>
+        <input type="radio" name="q7" value="0">Flume<br>
+        <input type="radio" name="q7" value="1">Zookeeper<br>
+        <input type="radio" name="q7" value="0">Spark<br>
+        <input type="radio" name="q7" value="0">HCluster<br>
+        <input type="radio" name="q7" value="0">HBase<br>
+    </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q7-->
+<div id="answer-q7" class="answer" style="display: none;"></div>
+<!-- Questão 8 -->
+<div class="mb-3">
+    <label class="form-label">8. O sistema de arquivos distribuídos do Hadoop, conhecido como HDFS, foi idealizado para trabalhar com 
+        grandes volumes de dados. Selecione a opção correta que apresenta o paradigma como o HDFS funciona. </label>
+    <div>
+        <input type="radio" name="q8" value="0">Centralizado e centralizado.<br>
+        <input type="radio" name="q8" value="0">Distribuído e centralizado<br>
+        <input type="radio" name="q8" value="0">Distribuído e distribuído<br>
+        <input type="radio" name="q8" value="0">Centralizado e distribuído<br>
+        <input type="radio" name="q8" value="1">Mestre e escravo<br>
+    </div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q8-->
+<div id="answer-q8" class="answer" style="display: none;"></div>
+<!-- Questão 9 -->
+            <div class="mb-3">
+                <label class="form-label">9. Em relação às características do processamento de fluxo de dados, 
+                    selecione a opção correta. </label>
+                <div>
+                    <input type="radio" name="q9" value="1">Representam o estado de um sistema em um dado momento<br>
+                    <input type="radio" name="q9" value="0">O fluxo de dados é intermitente <br>
+                    <input type="radio" name="q9" value="0">São relacionados à aplicações de internet das coisas<br>
+                    <input type="radio" name="q9" value="0">Sempre são do mesmo tipo<br>
+                    <input type="radio" name="q9" value="0">São invariáveis no tempo<br>
+                </div>
+            </div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q9-->
+<div id="answer-q9" class="answer" style="display: none;"></div>
+<!-- Questão 10 -->
+ <div class="mb-3">
+    <label class="form-label">10. Selecione a opção correta sobre o uso de <i>Big Data.</i></label>
+<div>
+<input type="radio" name="q10" value="0">Com projetos de Big Data é sempre possível detectar fraudes em operações financeiras.<br>
+<input type="radio" name="q10" value="0">Projetos de big de Big Data são uma forma de organizar tabelas normalizadas com grande volume de dados<br>
+<input type="radio" name="q10" value="0">É impossível não utilizar aplicações de Big Data para gerenciar projetos de internet das coisas<br>
+<input type="radio" name="q10" value="1">Grandes volumes de dados são úteis para testar a capacidade dos servidores de gerenciamento de dados.<br>
+<input type="radio" name="q10" value="0">O volume e diversidade dos dados podem dar uma visão realística do que está sendo observado.<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q10-->
+<div id="answer-q10" class="answer" style="display: none;"></div>
+<!-- Questão 11 -->
+<div class="mb-3">
+<label class="form-label">11. Em  relação   aos   RDBMS,   selecione  a   opção   que   apresenta  a 
+      característica   que   trata as transações em um banco de dados como uma unidade indivisível. 
+</label>
+<div>
+<input type="radio" name="q11" value="0">Consistência<br>
+<input type="radio" name="q11" value="0">Indivisibilidade<br>
+<input type="radio" name="q11" value="1">Atomicidade<br>
+<input type="radio" name="q11" value="0">Isolamento<br>
+<input type="radio" name="q11" value="0">Durabilidade<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q11-->
+<div id="answer-q11" class="answer" style="display: none;"></div>
+<!-- Questão 12 -->
+<div class="mb-3">
+<label class="form-label">12. A biblioteca Pandas é amplamente utilizada para manipular dados heterogêneos, situação
+     recorrente para aplicações de Big Data. Nesse sentido, selecione a opção que contém a <i>estrutura de dados</i> que 
+     possibilita o Cientista de dados atribuir nome para as colunas.   
+</label>
+<div>
+<input type="radio" name="q12" value="0">RDD<br>
+<input type="radio" name="q12" value="0">numpy.array<br>
+<input type="radio" name="q12" value="1">DataFrame<br>
+<input type="radio" name="q12" value="0">PySpark<br>
+<input type="radio" name="q12" value="0">SQL<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q12-->
+<div id="answer-q12" class="answer" style="display: none;"></div>
+<!-- Questão 13 -->
+<div class="mb-3">
+<label class="form-label">13.As bibliotecas são coleções de subprogramas utilizados no desenvolvimento de softwares.
+     Selecione a opção correta que contém o componente do <i>ecossistema do Spark</i> responsável por realizar operações
+      <i>paralelas em grafos. </i>
+</label>
+<div>
+<input type="radio" name="q13" value="0">MLlib<br>
+<input type="radio" name="q13" value="0">Streaming<br>
+<input type="radio" name="q13" value="1">GraphX<br>
+<input type="radio" name="q13" value="0">RDDs<br>
+<input type="radio" name="q13" value="0">Spark<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q13-->
+<div id="answer-q13" class="answer" style="display: none;"></div>
+<!-- Questão 14 -->
+<div class="mb-3">
+<label class="form-label">14. Selecione a opção a respeito da computação em nuvem.<br>   
+</label>
+<div>
+<input type="radio" name="q14" value="0">é a definição para aplicações de Big Data que utilizam os protocolos de internet <br>
+<input type="radio" name="q14" value="1">é um conjunto de tecnologias que disponibilizam sistemas e recursos na internet <br>
+<input type="radio" name="q14" value="0">trata-se da utilização de aplicações com finalidades específicas<br>
+<input type="radio" name="q14" value="0">é uma outra forma de denominar a internet das coisas<br>
+<input type="radio" name="q14" value="0">é uma forma de abstrair serviços da internet das coisas em redes locais distribuídas<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q14-->
+<div id="answer-q14" class="answer" style="display: none;"></div>
+<!-- Questão 15 -->
+<div class="mb-3">
+<label class="form-label">15. Em relação ao formato dos dados, selecione a opção correta que
+     corresponde ao <i>formato dos dados de transações bancárias.</i><br>   
+</label>
+<div>
+<input type="radio" name="q15" value="0">dados semiestruturados <br>
+<input type="radio" name="q15" value="0">dados de Big Data<br>
+<input type="radio" name="q15" value="0">dados não estruturados<br>
+<input type="radio" name="q15" value="1">dados estruturados<br>
+<input type="radio" name="q15" value="0">dados de Internet das Coisas<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q15-->
+<div id="answer-q15" class="answer" style="display: none;"></div>
+<!-- Questão 16 -->
+<div class="mb-3">
+<label class="form-label">16.Reconhecer os conceitos de Data Lake é fundamental para o profissional de Tecnologia 
+    da Informação. Selecione a opção correta a respeito de Data Lake. <br>   
+</label>
+<div>
+<input type="radio" name="q16" value="0">Aplicam processos de tratamento de dados.<br>
+<input type="radio" name="q16" value="0">Demandam por equipes especiais<br>
+<input type="radio" name="q16" value="1">Armazenam dados de forma eficiente.<br>
+<input type="radio" name="q16" value="0">São exclusivos da distribuição Hadoop Apache.<br>
+<input type="radio" name="q16" value="0">Possui alta latência para acesso dos dados.<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q16-->
+<div id="answer-q16" class="answer" style="display: none;"></div>
+<!-- Questão 17 -->
+<div class="mb-3">
+<label class="form-label">17. Os componentes do Spark têm como objetivo facilitar o desenvolvimento de projetos 
+    com finalidades específicas. Selecione a opção que contém o componente do ecossistema do Spark especializado 
+    em aplicações de aprendizado de máquina.<br>   
+</label>
+<div>
+<input type="radio" name="q17" value="0">Spark Learning<br>
+<input type="radio" name="q17" value="1">MLlib<br>
+<input type="radio" name="q17" value="0">RDDs<br>
+<input type="radio" name="q17" value="0">GraphX Learning<br>
+<input type="radio" name="q17" value="0">MLSpark<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q17-->
+<div id="answer-q17" class="answer" style="display: none;"></div>
+<!-- Questão 18 -->
+<div class="mb-3">
+    <label class="form-label">18. Sobre o <i>Pandas DataFrame</i>, o que podemos afirmar?</label>
+    <ol style="list-style-type: upper-roman;">
+        <li>É o coletivo de séries temporais pandas.</li>
+        <li>É a estrutura de dados que representa os dados em painel.</li>
+        <li>É uma matriz conjunto de vetores.</li>
+        <li>É o bloco fundamental da análise de dados moderna, principalmente para aprendizado de máquina.</li>
+    </ol>
+    <p>Analise as frases listadas e assinale a alternativa correta.</p>
+
+<input type="radio" name="q18" value="0">Apenas as opções I, II, III.<br>
+<input type="radio" name="q18" value="0">Apenas III.<br>
+<input type="radio" name="q18" value="1">Apenas as opções I, II, IV.<br>
+<input type="radio" name="q18" value="0">Todas as opções I, II, III, IV.<br>
+<input type="radio" name="q18" value="0">Apenas as opções II, III.<br>
+
+
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q18-->
+<div id="answer-q18" class="answer" style="display: none;"></div>
+<!-- Questão 19 -->
+<div class="mb-3">
+<label class="form-label">19. A qual técnica de Aprendizado de Máquina o Algoritmo de <i>Árvore de Decisão 
+    Classificadora</i> pertence? 
+</label>
+<div>
+<input type="radio" name="q19" value="0" >Modelos Generativos<br>
+<input type="radio" name="q19" value="1" >Classificação<br>
+<input type="radio" name="q19" value="0" >Agrupamento<br>
+<input type="radio" name="q19" value="0" >Regressão<br>
+<input type="radio" name="q19" value="0" >Q-Learning<br>
+</div>
+</div>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q19-->
+<div id="answer-q19" class="answer" style="display: none;"></div>
+<!-- Questão 20 -->
+<div class="mb-3">
+<label class="form-label">20.Em relação ao Data Lake, selecione a opção correta que contenha o (s) formato(s) de  
+dados que pode(m) ser armazenados(s) nele.    
+</label>
+<div>
+<input type="radio" name="q20" value="1">estruturado, não estruturado e semiestruturado <br>
+<input type="radio" name="q20" value="0">estruturado e semiestruturado<br>
+<input type="radio" name="q20" value="0">apenas tabelas relacionais<br>
+<input type="radio" name="q20" value="0">apenas estruturado<br>
+<input type="radio" name="q20" value="0">apenas não estruturado<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q20-->
+<div id="answer-q20" class="answer" style="display: none;"></div>
+<!-- Questão 21 -->
+<div class="mb-3">
+    <label class="form-label">21. Observe o trecho de código abaixo:</label>
+    <pre>
+        <strong>query = "SELECT * FROM tabela_teste WHERE valor = " + str(str_valor)
+        registros = spark.sql(query)</strong>
+
+    </pre>
+    <p>Selecione a opção correta a respeito dele.</p>
+</div>
+
+<div>
+<input type="radio" name="q21" value="1">Trata-se de um exemplo de utilização do Spark SQL<br>
+<input type="radio" name="q21" value="0">É um exemplo de aplicação de GraphX<br>
+<input type="radio" name="q21" value="0">A aplicação do trecho do código está errada<br>
+<input type="radio" name="q21" value="0">A execução do código vai funcionar corretamente <br>
+<input type="radio" name="q21" value="0">É possível afirmar que a tabela_teste existe<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q21-->
+<div id="answer-q21" class="answer" style="display: none;"></div>
+<!-- Questão 22 -->
+<div class="mb-3">
+<label class="form-label">22.A visualização dos dados é fundamental no processo de análise e interpretação. 
+    Qual o tipo de visualização de dados mais indicada para <i>dados temporais</i>?     
+</label>
+<div>
+<input type="radio" name="q22" value="1">Gráfico de Linha<br>
+<input type="radio" name="q22" value="0">Gráfico de Barra<br>
+<input type="radio" name="q22" value="0">Gráfico de Estrela<br>
+<input type="radio" name="q22" value="0">Gráfico de Faces de Chernoffbr<br>
+<input type="radio" name="q22" value="0">Gráfico de Matriz de Dispersão<br>
+</div>
+</div><br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q22-->
+<div id="answer-q22" class="answer" style="display: none;"></div>
+
+<!-- Questão 23 -->
+<div class="mb-3">
+    <label class="form-label">23. A linguagem Python se destaca como intuitiva e de fácil aprendizagem.</label>
+    <p>Analise o código abaixo que apresenta laços condicionais e instruções de repetição:</p>
+    <pre style="text-align: center;">
+for i in range(10): 
+    if (i % 2 == 0):         
+        print(i)
+    </pre>
+    <p>Qual a saída esperada após a execução do programa?</p>
+</div>
+
+<input type="radio" name="q23" value="0">Serão impressos no console os números racionais entre 0 e 9<br>
+<input type="radio" name="q23" value="0">Serão impressos no console os números pares entre 1 e 10<br>
+<input type="radio" name="q23" value="0">Serão impressos no console os números ímpares entre 0 e 10<br>
+<input type="radio" name="q23" value="1">Serão impressos no console os números pares entre 0 e 9<br>
+<input type="radio" name="q23" value="0">Serão impressos no console os números ímpares entre 0 e 9<br>
+    <!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q23-->
+<div id="answer-q23" class="answer" style="display: none;"></div><br>
+<!-- Questão 24 -->
+<div class="mb-3">
+    <label class="form-label">24. As técnicas de aprendizado de máquina para aprendizado supervisionado são:</label>
+    <ol style="list-style-type: upper-roman;">
+        <li>Classificação</li>
+        <li>Agrupamento</li>
+        <li>Regressão</li>
+    </ol>
+</div>
+
+<input type="radio" name="q24" value="0" class="input-spacing">Apenas I <br><br>
+<input type="radio" name="q24" value="0" class="input-spacing">Apenas I e II<br><br>
+<input type="radio" name="q24" value="1" class="input-spacing">Apenas I e III<br><br>
+<input type="radio" name="q24" value="0" class="input-spacing">Apenas II e III<br><br>
+<input type="radio" name="q24" value="0" class="input-spacing">Apenas II<br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q24-->
+<div id="answer-q24" class="answer" style="display: none;"></div><br>
+<!-- Questão 25 -->
+<div class="mb-3">
+    <label class="form-label">25. Alfredo começou em um laboratório de pesquisa e inovação no começo deste ano. 
+        Este laboratório investiga a relação entre trocas de mensagens em redes sociais e variações na bolsa de
+         valores, dependendo principalmente de modelos de redes neurais recorrentes. Com qual tipo de IA
+          Alfredo está lidando? </label>
+   
+
+<input type="radio" name="q25" value="0" class="input-spacing">IA PuraI<br><br>
+<input type="radio" name="q25" value="0" class="input-spacing">A Biológica<br><br>
+<input type="radio" name="q25" value="0" class="input-spacing">IA Quântica<br><br>
+<input type="radio" name="q25" value="1" class="input-spacing">IA SubSimbólica<br><br>
+<input type="radio" name="q25" value="0" class="input-spacing">IA Simbólica<br>
+<!--Exibe a resposta correta após o envio do formulário, sendo identificada pelo id answer-q24-->
+<div id="answer-q25" class="answer" style="display: none;"></div><br>
+<!-- Botão de Enviar -->
+<button type="submit" id="submit-quiz" class="btn btn-primary">Enviar Respostas</button>
+<div id="result" class="text-center"></div>
+<div id="answers" style="display: none;">
+</form>
+<!-- Inclusão de Scripts JS -->  
+<script src="/public/js/script.js"></script><!-- Link para o JS personalizado -->     
+<script src="/public/js/jquery-3.7.1.min.js"></script>  <!-- Link para o JS do jQuery -->
+        
+
+<!-- Inclusão de Funções:-->
+<script src="/public/js/functions/sanitizeInput.js"></script><!--Função de Proteção Básica Contra Ataques XSS-->       
+<script src="/public/js/functions/quizBigdata.js"></script><!-- Função para avaliar o quiz--> 
+
+</body>
+</html>

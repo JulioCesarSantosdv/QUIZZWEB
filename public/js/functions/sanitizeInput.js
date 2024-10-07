@@ -1,9 +1,11 @@
-document.getElementById('quizForm').addEventListener('submit', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
+    const quizForm = document.getElementById('quiz-form');
+    if (quizForm) {
+        quizForm.addEventListener('submit', function(event) {
             event.preventDefault(); // Previne o envio do formulário
 
             // Função para sanitizar a entrada
             function sanitizeInput(input) {
-		// Substitui caracteres especiais por suas entidades HTML
                 return input
                     .replace(/&/g, "&amp;")
                     .replace(/</g, "&lt;")
@@ -19,3 +21,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
             // Exibindo o resultado
             document.getElementById('result').innerHTML = "Você respondeu: " + userInput;
         });
+    } else {
+        console.error("Elemento quiz-form não encontrado.");
+    }
+});

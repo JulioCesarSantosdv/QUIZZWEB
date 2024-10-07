@@ -1,0 +1,19 @@
+.dropdown-menu {
+    list-style-type: none; /* Remove o estilo de lista padrão */
+    padding-left: 0; /* Remove o recuo padrão */
+}
+
+.dropdown-menu li {
+    position: relative; /* Necessário para posicionar os marcadores */
+    padding-left: 20px; /* Espaço para os marcadores */
+}
+
+.dropdown-menu li::before {
+    
+    position: absolute; /* Posiciona o marcador */
+    left: 0; /* Alinha à esquerda */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para o centro vertical */
+    font-size: 16px; /* Tamanho do símbolo de check */
+    line-height: 1; /* Ajusta o espaçamento vertical */
+}

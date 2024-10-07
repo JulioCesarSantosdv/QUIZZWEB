@@ -1,0 +1,71 @@
+/* Estilo geral para o conteúdo da página */
+.quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo com leve transparência */
+    color: #333; /* Cor do texto */
+}
+
+/* Ajuste no container da questão */
+.mb-3 {
+    margin-bottom: 20px; /* Espaçamento inferior consistente */
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com leve transparência */
+}
+.mb-3 input[type="radio"] {
+    margin-bottom: 10px; /* Adiciona espaço abaixo de cada input */
+    margin-right: 10px; /* Espaço à direita de cada input */
+}
+
+/* Estilo para o título principal */
+h1 {
+    color: #4b0082; /* Púrpura para o título principal */
+}
+
+/* Estilo para as labels */
+.quiz-container label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #333; /* Texto das labels */
+}
+
+/* Estilo para as opções de resposta */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre as opções */
+}
+
+.timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Cor do texto do timer */
+}
+
+/* Estilo para o botão de enviar */
+.btn-primary {
+    background-color: #6a0dad; /* Cor púrpura */
+    border-color: #6a0dad; /* Cor da borda púrpura */
+}
+
+/* Alterando a cor do botão ao passar o mouse */
+.btn-primary:hover {
+    background-color: #8a2be2; /* Tom mais claro de púrpura ao passar o mouse */
+    border-color: #8a2be2; /* Borda do botão ao passar o mouse */
+}
+
+/* Estilo para a div de resultado */
+#result {
+    color: #6a0dad; /* Cor do texto na div de resultado */
+}
+
+/* Estilo para a div de respostas */
+#answers {
+    color: #6a0dad; /* Cor do texto na div de respostas */
+}

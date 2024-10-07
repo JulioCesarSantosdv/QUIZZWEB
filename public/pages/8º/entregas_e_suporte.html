@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Informação - Matérias</title>
+    <!-- Importando Fonte do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link para o CSS do Bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/css/bootstrap.min.css">
+    <!-- Link para o CSS Personalizado -->
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <!-- Compatibilidade com IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        body {
+            background-image: url('/assets/images/background.jpg'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            color: whitesmoke;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            backdrop-filter: blur(10px); /* Efeito vidro */
+            background-color: rgba(255, 255, 255, 0); /* Fundo transparente */
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 100px auto; /* Centraliza na página */
+            text-align: center; /* Centraliza o texto */
+        }
+
+        .list-group-item {
+            background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente dos itens */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .list-group-item:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Efeito ao passar o mouse */
+            transform: scale(1.05); /* Aumenta levemente o item */
+        }
+
+        /* Estilo dos links */
+        .list-group-item a {
+            color: whitesmoke; /* Cor do texto */
+            font-weight: bold; /* Texto em negrito */
+            text-decoration: none; /* Remove o sublinhado */
+        }
+
+        .list-group-item a:hover {
+            text-decoration: underline; /* Substitui o sublinhado ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SISTEMAS DE INFORMAÇÃO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">8º Período</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container mt-5">
+        <h1>ENTREGA E SUPORTE<br>EM TI</h1>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="materia1.html" target="_blank">SIMULADOS</a></li>
+            <li class="list-group-item"><a href="materia2.html" target="_blank">FLASCARDS</a></li>
+        </ul>
+    </div>
+
+    <!-- Script JS do Bootstrap -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

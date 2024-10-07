@@ -1,0 +1,20 @@
+.navbar-dark .navbar-brand {
+    color: #d4afff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d4afff;
+}
+
+.navbar-dark .navbar-nav .dropdown-menu {
+    background-color: #1a1a1a;
+}
+
+.navbar-dark .dropdown-item {
+    color: #d4afff;
+}
+
+.navbar-dark .dropdown-item:hover {
+    background-color: #4b0082;
+    color: #fff;
+}

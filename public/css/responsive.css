@@ -1,0 +1,25 @@
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .quiz-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .timer {
+        font-size: 1.5em;
+    }
+    
+    body {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timer {
+        font-size: 1.2em;
+    }
+    
+    .quiz-container {
+        padding: 10px;
+    }
+}

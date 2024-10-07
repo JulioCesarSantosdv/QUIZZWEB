@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="xv-responsive is-desktop" lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container quiz-container">
+        <h1 class="text-center">SIMULADO - PROGRAMAÇÃO CLIENTE E SERVIDOR</h1>
+        <div class="timer text-center">Tempo restante: <span id="time">40</span> minutos</div>
+        <form id="quiz-form"></form> <!-- O formulário será preenchido com as perguntas via JS -->
+    </div>
+<!-- Botão de Enviar -->
+<button type="submit" id="submit-quiz" class="btn btn-primary">Enviar Respostas</button>
+<div id="result" class="text-center"></div>
+<div id="answers" style="display: none;">
+</form>
+</div>
+        <!-- Chamando Função de Proteção Básica Contra Ataques XSS-->
+        <script src="/public/js/functions/sanitizeInput.js"></script>
+        <!-- Link para o JS do jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Link para o JS personalizado -->
+        <script src="/public/js/script.js"></script>
+
+    <script>
+        // Array de questões
+        const questions = [
+            {
+                question: "1. Considerando o fragmento de código abaixo, em relação ao escopo de variáveis em Javascript, assinale a afirmativa correta:",
+                code: `for (let i=0; i<5; i++) { var a = 0; a++; } console.log(a); i = i - 1; console.log(i);`,
+                answers: [
+                    "Serão impressos 6 e 4",
+                    "Serão impressos 1 e undefined",
+                    "Serão impressos 1 e -1",
+                    "Serão impressos 5 e 5",
+                    "Serão impressos undefined e undefined"
+                ],
+                correct: 1
+            },
+            {
+                question: "2. FCC - 2014 - TRT - 13ª Região (PB) - Técnico Judiciário - Tecnologia da Informação. Considere a página abaixo, construída utilizando jQuery:",
+                code: `...`,
+                answers: [
+                    "$('button:eq(1)').click(function(){$('p#par').hide();});",
+                    "$('button:eq(0)').click(function().defineProperty('p.par').hide());",
+                    "$('button').click(function(){$('p.par').hidden();});",
+                    "$('button').click(function(){$('p.par').hide();});",
+                    "$('button').click(function(){$('p#par').hide();});"
+                ],
+                correct: 3
+            },
+            // Continue listando as questões restantes
+        ];
+
+        // Embaralhar as questões
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Selecionar 10 questões aleatórias
+        const shuffledQuestions = shuffle(questions).slice(0, 10);
+
+        // Inserir as questões no formulário
+        const quizForm = document.getElementById('quiz-form');
+
+        shuffledQuestions.forEach((q, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('mb-3');
+
+            const questionLabel = document.createElement('label');
+            questionLabel.classList.add('form-label');
+            questionLabel.innerHTML = `${index + 1}. ${q.question}`;
+            questionDiv.appendChild(questionLabel);
+
+            if (q.code) {
+                const codeBlock = document.createElement('pre');
+                codeBlock.style.fontFamily = "'Courier New', Courier, monospace";
+                codeBlock.style.fontWeight = "bold";
+                codeBlock.style.tabSize = "4";
+                codeBlock.style.fontSize = "18px";
+                codeBlock.innerHTML = q.code;
+                questionDiv.appendChild(codeBlock);
+            }
+
+            q.answers.forEach((answer, i) => {
+                const answerDiv = document.createElement('div');
+                const answerInput = document.createElement('input');
+                answerInput.type = 'radio';
+                answerInput.name = `q${index + 1}`;
+                answerInput.value = i;
+                answerDiv.appendChild(answerInput);
+                answerDiv.appendChild(document.createTextNode(` ${answer}`));
+                questionDiv.appendChild(answerDiv);
+            });
+
+            quizForm.appendChild(questionDiv);
+        });
+    </script>
+</body>
+</html>
